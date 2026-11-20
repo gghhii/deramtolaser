@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html class="light" lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="pageTitle">Détail du Protocole - DERMATOLASER Sousse</title>
+    <meta name="description" content="Protocole médical laser de haute précision au centre DERMATOLASER Sousse." />
+
+    <!-- Tailwind CSS with custom theme config -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#000000",
+                        "luxury-gold": "#C5A059",
+                        "gold-light": "#FAF6ED",
+                        "gold-dark": "#9E7D3B",
+                        "gold-bright": "#DFBA73"
+                    },
+                    fontFamily: {
+                        "label-ui": ["Plus Jakarta Sans", "sans-serif"],
+                        "label-caps": ["Plus Jakarta Sans", "sans-serif"],
+                        "body-md": ["Plus Jakarta Sans", "sans-serif"],
+                        "headline-md": ["Plus Jakarta Sans", "sans-serif"],
+                        "headline-lg": ["Plus Jakarta Sans", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/site.css" />
+</head>
+<body class="bg-[#FBFBFA] text-neutral-900 font-body-md antialiased min-h-screen flex flex-col justify-between overflow-x-hidden selection:bg-black selection:text-white">
+
+    <!-- Top Luxury Accent Line -->
+    <div class="h-[2px] bg-gradient-to-r from-transparent via-[#DFBA73] to-transparent w-full"></div>
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 w-full z-40 border-b border-neutral-200 bg-white/95 backdrop-blur-md">
+        <div class="flex justify-between items-center px-4 sm:px-6 lg:px-12 h-20 max-w-7xl mx-auto w-full gap-4">
+            <a href="index.html" class="flex flex-col group flex-shrink-0">
+                <span class="font-headline-md text-lg sm:text-xl md:text-[22px] font-extrabold tracking-tight text-black group-hover:opacity-90 transition-opacity whitespace-nowrap leading-none">
+                    CENTRE LASER <span class="text-[#C5A059]">LES OLIVIERS</span>
+                </span>
+                <span class="font-label-caps text-[8px] sm:text-[8.5px] uppercase tracking-[0.22em] text-[#9E7D3B] font-bold whitespace-nowrap mt-1">
+                    Dermatologie &amp; Esthétique Médicale
+                </span>
+            </a>
+            
+            <nav class="hidden lg:flex items-center justify-center gap-7">
+                <a href="index.html" class="font-label-caps text-xs text-neutral-600 hover:text-black uppercase font-medium tracking-wider transition-colors">Accueil</a>
+                <a href="le-centre.html?v=2" class="font-label-caps text-xs text-neutral-600 hover:text-black uppercase font-medium tracking-wider transition-colors">Le Centre</a>
+                <a href="soins.html" class="font-label-caps text-xs text-black hover:text-[#9E7D3B] uppercase font-bold tracking-wider transition-colors">Nos Soins</a>
+                <a href="avant-apres.html" class="font-label-caps text-xs text-neutral-600 hover:text-black uppercase font-medium tracking-wider transition-colors">Avant / Après</a>
+                <a href="avis.html" class="font-label-caps text-xs text-neutral-600 hover:text-black uppercase font-medium tracking-wider transition-colors">Avis</a>
+                <a href="contact.html" class="font-label-caps text-xs text-neutral-600 hover:text-black uppercase font-medium tracking-wider transition-colors">Contact</a>
+            </nav>
+
+            <div class="flex items-center gap-3">
+                <a href="soins.html" class="hidden sm:inline-flex items-center gap-2 font-label-caps text-xs bg-black text-[#DFBA73] border border-[#C5A059] px-4 sm:px-5 py-2.5 hover:bg-[#C5A059] hover:text-black transition-all uppercase tracking-wider font-bold shadow-sm">
+                    <span class="material-symbols-outlined text-sm">arrow_back</span>
+                    <span>Catalogue des Soins</span>
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button onclick="toggleMobileMenu()" class="lg:hidden p-2 text-black hover:text-[#C5A059] transition-colors" aria-label="Menu Mobile">
+                    <span class="material-symbols-outlined text-3xl">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Slide-Out Navigation Drawer -->
+    <div id="mobileMenuBackdrop" onclick="toggleMobileMenu()" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+    <div id="mobileMenuDrawer" class="fixed top-0 right-0 h-full w-[85%] max-w-md bg-white z-50 shadow-2xl p-6 flex flex-col justify-between translate-x-full border-l border-neutral-200">
+        <div>
+            <div class="flex justify-between items-center pb-6 border-b border-neutral-200">
+                <div>
+                    <span class="font-headline-md text-lg font-extrabold text-black block leading-tight">CENTRE LASER <span class="text-[#C5A059]">LES OLIVIERS</span></span>
+                    <span class="font-label-caps text-[9px] uppercase tracking-widest text-[#9E7D3B] font-semibold">Clinique Les Oliviers &bull; Sousse</span>
+                </div>
+                <button onclick="toggleMobileMenu()" class="p-2 text-black hover:opacity-60">
+                    <span class="material-symbols-outlined text-2xl">close</span>
+                </button>
+            </div>
+
+            <nav class="flex flex-col py-6 space-y-3">
+                <a href="index.html" onclick="toggleMobileMenu()" class="font-label-caps text-xs text-black hover:text-[#9E7D3B] uppercase tracking-wider py-2 border-b border-neutral-100">Accueil</a>
+                <a href="le-centre.html?v=2" onclick="toggleMobileMenu()" class="font-label-caps text-xs text-black hover:text-[#9E7D3B] uppercase tracking-wider py-2 border-b border-neutral-100">Le Centre &amp; Équipe</a>
+                <a href="tous-les-soins.html" onclick="toggleMobileMenu()" class="font-label-caps text-xs text-black hover:text-[#9E7D3B] uppercase tracking-wider py-2 border-b border-neutral-100 font-bold">Nos Soins</a>
+                <a href="avant-apres.html" onclick="toggleMobileMenu()" class="font-label-caps text-xs text-black hover:text-[#9E7D3B] uppercase tracking-wider py-2 border-b border-neutral-100">Résultats Avant / Après</a>
+                <a href="avis.html" onclick="toggleMobileMenu()" class="font-label-caps text-xs text-black hover:text-[#9E7D3B] uppercase tracking-wider py-2 border-b border-neutral-100">Avis &amp; Témoignages</a>
+                <a href="contact.html" onclick="toggleMobileMenu()" class="font-label-caps text-xs text-black hover:text-[#9E7D3B] uppercase tracking-wider py-2">Contact &amp; Accès</a>
+            </nav>
+        </div>
+
+        <div class="space-y-3 pt-6 border-t border-neutral-200">
+            <button onclick="toggleMobileMenu(); openReservationModal(currentReservationName)" class="w-full py-3.5 bg-black text-white border border-[#C5A059]/60 font-label-caps text-xs tracking-widest uppercase hover:bg-[#C5A059] hover:text-black transition-colors flex items-center justify-center gap-2 font-bold shadow-md">
+                <span class="material-symbols-outlined text-sm text-[#DFBA73]">calendar_month</span> Réserver ce Soin
+            </button>
+            <a href="tel:+21673000111" class="w-full py-3 border border-black text-black font-label-caps text-xs tracking-widest uppercase text-center flex items-center justify-center gap-2 hover:border-[#C5A059] hover:text-[#9E7D3B] transition-colors">
+                <span class="material-symbols-outlined text-sm text-[#9E7D3B]">call</span> +216 73 000 111
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="flex-grow py-8 md:py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Breadcrumb Navigation & Treatment Switcher Bar -->
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8 pb-4 border-b border-neutral-200">
+                <nav class="flex items-center gap-2 text-xs font-label-caps uppercase tracking-wider text-neutral-500">
+                    <a href="index.html" class="hover:text-black transition-colors">Accueil</a>
+                    <span class="text-neutral-300">/</span>
+                    <a href="soins.html" class="hover:text-black transition-colors">Nos Soins</a>
+                    <span class="text-neutral-300">/</span>
+                    <span id="crumbTitle" class="text-black font-bold truncate"></span>
+                </nav>
+
+                <!-- Quick Treatment Switcher -->
+                <div class="flex items-center gap-2 w-full sm:w-auto">
+                    <span class="font-label-caps text-[11px] text-neutral-400 uppercase tracking-wider whitespace-nowrap hidden md:inline">Changer de soin :</span>
+                    <select id="treatmentSwitcher" onchange="if(this.value) window.location.href='soin.html?id=' + this.value" class="py-1.5 px-3 bg-white border border-neutral-300 text-xs font-label-caps uppercase tracking-wider text-neutral-800 font-bold focus:outline-none focus:border-black cursor-pointer shadow-sm w-full sm:w-auto">
+                        <option value="" disabled>Sélectionner un autre protocole...</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- TOP SHOWCASE: The Exact Card Image on the Left, Refined Clinical Profile on the Right -->
+            <section class="bg-white border border-neutral-200 shadow-xl overflow-hidden mb-14">
+                <!-- Top Gold Accent Line on Card -->
+                <div class="h-1 bg-gradient-to-r from-[#DFBA73] via-[#C5A059] to-[#9E7D3B]"></div>
+
+                <div class="p-6 sm:p-8 lg:p-12">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
+                        
+                        <!-- Left Column: The EXACT Card Image (Clean, Large, Crisp, Uncovered) -->
+                        <div class="lg:col-span-5 flex flex-col">
+                            <div class="relative overflow-hidden border border-neutral-200 shadow-md group bg-neutral-100 aspect-[4/3] sm:aspect-square lg:aspect-[4/3.8]">
+                                <img id="detailImage" src="" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                                
+                                <!-- Category Badge with pulse dot -->
+                                <div class="absolute top-4 left-4 bg-black/90 backdrop-blur-md px-3.5 py-1.5 border border-[#C5A059]/60 flex items-center gap-2 shadow-lg">
+                                    <span class="w-2 h-2 rounded-full bg-[#DFBA73] animate-pulse"></span>
+                                    <span id="detailBadge" class="text-[#DFBA73] font-label-caps text-[10px] uppercase tracking-widest font-bold"></span>
+                                </div>
+
+                                <!-- Duration Badge -->
+                                <div class="absolute bottom-4 right-4 bg-white/95 text-black font-label-caps text-[10px] uppercase tracking-wider px-3 py-1.5 border border-neutral-200 font-bold shadow-md backdrop-blur-sm flex items-center gap-1.5">
+                                    <span class="material-symbols-outlined text-xs text-[#9E7D3B]">schedule</span>
+                                    <span id="detailDurationTag"></span>
+                                </div>
+                            </div>
+
+                            <!-- Trust Bar directly below image -->
+                            <div class="mt-4 p-3.5 bg-neutral-900 text-white flex items-center justify-between text-[11px] font-label-caps uppercase tracking-wider border-t-2 border-[#DFBA73]">
+                                <div class="flex items-center gap-2">
+                                    <span class="material-symbols-outlined text-[#DFBA73] text-sm">verified</span>
+                                    <span class="font-bold">Plateau Médical Certifié CE &amp; FDA</span>
+                                </div>
+                                <span class="text-neutral-400 font-semibold">Sousse</span>
+                            </div>
+                        </div>
+
+                        <!-- Right Column: Elevated Clinical Overview & User Story Journey -->
+                        <div class="lg:col-span-7 flex flex-col justify-between">
+                            <div>
+                                <!-- Eyebrow: Technology & Medical Grade -->
+                                <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#FAF6ED] border border-[#C5A059]/40 text-[#9E7D3B] font-label-caps text-[10px] uppercase tracking-widest font-bold mb-3 shadow-sm">
+                                    <span class="material-symbols-outlined text-xs">biomedical</span>
+                                    <span id="detailTech"></span>
+                                </div>
+
+                                <!-- Treatment Title -->
+                                <h1 id="detailTitle" class="font-headline-lg text-2xl sm:text-3xl lg:text-4xl font-extrabold text-black mb-3 leading-tight tracking-tight"></h1>
+
+                                <!-- Tagline (Luxury Quote Styling) -->
+                                <p id="detailTagline" class="font-body-md text-sm sm:text-base text-neutral-600 pl-4 border-l-2 border-[#DFBA73] mb-6 italic leading-relaxed"></p>
+
+                                <!-- Clinical Intro Paragraphs -->
+                                <div id="detailIntro" class="space-y-3 font-body-md text-sm text-neutral-700 leading-relaxed mb-6"></div>
+
+                                <!-- Indications Traitées -->
+                                <div class="mb-6">
+                                    <div class="flex items-center gap-1.5 text-xs font-label-caps uppercase tracking-wider font-bold text-black mb-2.5">
+                                        <span class="material-symbols-outlined text-[#C5A059] text-sm">target</span>
+                                        <span>Indications Cutanées Ciblées :</span>
+                                    </div>
+                                    <div id="detailIndications" class="flex flex-wrap gap-2"></div>
+                                </div>
+
+                                <!-- Bénéfices & Résultats Attendus -->
+                                <div class="mb-8">
+                                    <div class="flex items-center gap-1.5 text-xs font-label-caps uppercase tracking-wider font-bold text-black mb-2.5">
+                                        <span class="material-symbols-outlined text-[#C5A059] text-sm">auto_awesome</span>
+                                        <span>Résultats &amp; Bénéfices Cliniques :</span>
+                                    </div>
+                                    <div id="detailBenefits" class="grid grid-cols-1 sm:grid-cols-2 gap-2.5"></div>
+                                </div>
+                            </div>
+
+                            <!-- Action Buttons: Booking & Direct WhatsApp Consultation -->
+                            <div class="pt-6 border-t border-neutral-200">
+                                <div class="flex flex-col sm:flex-row gap-3">
+                                    <button id="btnReserve" onclick="openReservationModal(currentReservationName)" class="flex-1 py-4 px-6 bg-black text-white hover:bg-[#C5A059] hover:text-black border border-[#C5A059] font-label-caps text-xs uppercase tracking-widest font-bold transition-all flex items-center justify-center gap-2 shadow-lg hover:shadow-xl duration-300">
+                                        <span class="material-symbols-outlined text-base text-[#DFBA73]">calendar_month</span>
+                                        <span>Prendre Rendez-Vous pour ce Soin</span>
+                                    </button>
+                                    <a id="btnWhatsapp" href="#" target="_blank" class="py-4 px-6 bg-[#25D366] text-white hover:bg-[#1EBE5D] font-label-caps text-xs uppercase tracking-wider font-bold transition-all flex items-center justify-center gap-2 shadow-md">
+                                        <span class="material-symbols-outlined text-base">chat</span>
+                                        <span>WhatsApp Direct</span>
+                                    </a>
+                                </div>
+
+                                <!-- Trust reassurance line -->
+                                <div class="flex flex-wrap items-center justify-center sm:justify-start gap-4 sm:gap-6 mt-4 text-[11px] font-label-caps text-neutral-500 uppercase tracking-wider">
+                                    <span class="flex items-center gap-1"><span class="text-[#C5A059]">✦</span> Bilan cutané personnalisé inclus</span>
+                                    <span class="flex items-center gap-1"><span class="text-[#C5A059]">✦</span> Supervision médicale stricte</span>
+                                    <span class="flex items-center gap-1"><span class="text-[#C5A059]">✦</span> Sousse Medical Center</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 2: 4 Clinical Steps of the Treatment (Elevated User Story) -->
+            <section class="bg-white border border-neutral-200 shadow-md p-6 sm:p-8 lg:p-10 mb-14">
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-8 pb-4 border-b border-neutral-100 gap-4">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#FAF6ED] border border-[#C5A059]/40 text-[#9E7D3B] font-label-caps text-[10px] uppercase tracking-widest font-bold mb-2">
+                            <span>Protocole Médical</span>
+                        </div>
+                        <h2 class="font-headline-lg text-2xl sm:text-3xl font-bold text-black tracking-tight">Votre Parcours de Soin en 4 Étapes</h2>
+                    </div>
+                    <span class="font-body-md text-xs text-neutral-500 max-w-sm">Chaque protocole est supervisé du diagnostic initial au suivi post-acte.</span>
+                </div>
+                <div id="detailSteps" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+            </section>
+
+            <!-- SECTION 3: FAQ (Simple & Clean Accordion) -->
+            <section class="bg-white border border-neutral-200 shadow-md p-6 sm:p-8 lg:p-10 mb-14">
+                <div class="mb-6 pb-4 border-b border-neutral-100">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#FAF6ED] border border-[#C5A059]/40 text-[#9E7D3B] font-label-caps text-[10px] uppercase tracking-widest font-bold mb-2">
+                        <span>Réponses Cliniques</span>
+                    </div>
+                    <h2 class="font-headline-lg text-2xl sm:text-3xl font-bold text-black tracking-tight">Questions Fréquemment Posées</h2>
+                </div>
+                <div id="detailFaq" class="space-y-3"></div>
+            </section>
+
+            <!-- SECTION 4: Final Luxury Call-To-Action Banner -->
+            <section class="relative bg-black text-white p-8 sm:p-12 border border-[#C5A059]/40 shadow-2xl text-center overflow-hidden mb-8">
+                <div class="absolute inset-0 bg-gradient-to-r from-black via-neutral-950 to-black pointer-events-none"></div>
+                <div class="relative z-10 max-w-2xl mx-auto space-y-4">
+                    <span class="font-label-caps text-[10px] text-[#DFBA73] uppercase tracking-widest font-bold block">DERMATOLASER Medical Excellence</span>
+                    <h3 class="font-headline-lg text-2xl sm:text-3xl font-extrabold text-white leading-tight">Prêt(e) à Débuter Votre Protocole ?</h3>
+                    <p class="font-body-md text-xs sm:text-sm text-neutral-300 leading-relaxed">
+                        Prenez rendez-vous en ligne en quelques clics ou contactez directement notre équipe pour une consultation sur mesure.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center items-center gap-4 pt-4">
+                        <button onclick="openReservationModal(currentReservationName)" class="w-full sm:w-auto px-8 py-3.5 bg-gradient-to-r from-[#DFBA73] to-[#C5A059] text-black font-label-caps text-xs uppercase tracking-widest font-bold hover:brightness-110 transition-all shadow-lg">
+                            Réserver ce Soin Maintenant
+                        </button>
+                        <a href="soins.html" class="w-full sm:w-auto px-6 py-3.5 border border-neutral-600 hover:border-white text-white font-label-caps text-xs uppercase tracking-wider font-semibold transition-colors">
+                            Retour à Tous les Soins
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Reservation Modal (Pre-filled with treatment name) -->
+        <!-- Floating VIP Concierge Action Buttons (WhatsApp & Réservation) -->
+    <div class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40 flex flex-col items-end gap-2.5 sm:gap-3.5 floating-concierge-container">
+        <!-- WhatsApp Direct -->
+        <a href="https://wa.me/21621040266" target="_blank" rel="noopener noreferrer"
+           class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-black flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300 border border-[#C5A059] hover:border-[#DFBA73] group relative"
+           aria-label="WhatsApp Direct" title="WhatsApp Direct">
+            <svg class="w-6 h-6 sm:w-7 sm:h-7 fill-[#25D366]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            <span class="absolute right-16 px-3 py-1.5 bg-black text-white text-[11px] font-label-caps uppercase tracking-wider whitespace-nowrap shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-[#C5A059]/60 hidden sm:block">
+                WhatsApp Direct
+            </span>
+        </a>
+
+        <!-- Réserver en Ligne -->
+        <button onclick="openReservationModal()" type="button"
+                class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-black flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300 border border-[#C5A059] hover:border-[#DFBA73] group relative cursor-pointer"
+                aria-label="Réserver en Ligne" title="Réserver en Ligne">
+            <span class="material-symbols-outlined text-2xl sm:text-[26px] text-[#DFBA73]">calendar_month</span>
+            <span class="absolute right-16 px-3 py-1.5 bg-black text-white text-[11px] font-label-caps uppercase tracking-wider whitespace-nowrap shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-[#C5A059]/60 hidden sm:block">
+                Réserver en Ligne
+            </span>
+        </button>
+    </div>
+
+    <div id="reservationModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm hidden">
+        <div class="bg-white w-full max-w-lg border border-[#C5A059] shadow-2xl p-6 sm:p-8 max-h-[90vh] overflow-y-auto">
+            <div class="flex justify-between items-center pb-4 mb-4 border-b border-neutral-200">
+                <div>
+                    <span class="font-label-caps text-[10px] text-[#9E7D3B] uppercase tracking-widest font-bold block">Prise de Rendez-Vous</span>
+                    <h3 class="font-headline-md text-xl font-bold text-black">Demande de Consultation</h3>
+                </div>
+                <button type="button" onclick="closeReservationModal()" class="text-neutral-400 hover:text-black text-2xl leading-none">&times;</button>
+            </div>
+            <form id="reservationForm" onsubmit="handleReservationSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block font-label-caps text-xs text-black mb-1 uppercase font-bold">Nom &amp; Prénom *</label>
+                    <input type="text" name="FullName" required class="w-full bg-white border border-neutral-300 px-4 py-2.5 text-sm text-black focus:outline-none focus:border-black" placeholder="Votre nom complet" />
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block font-label-caps text-xs text-black mb-1 uppercase font-bold">Téléphone *</label>
+                        <input type="tel" name="Phone" required class="w-full bg-white border border-neutral-300 px-4 py-2.5 text-sm text-black focus:outline-none focus:border-black" placeholder="+216 -- --- ---" />
+                    </div>
+                    <div>
+                        <label class="block font-label-caps text-xs text-black mb-1 uppercase font-bold">Email</label>
+                        <input type="email" name="Email" class="w-full bg-white border border-neutral-300 px-4 py-2.5 text-sm text-black focus:outline-none focus:border-black" placeholder="votre@email.com" />
+                    </div>
+                </div>
+                <div>
+                    <label class="block font-label-caps text-xs text-black mb-1 uppercase font-bold">Protocole de Soin Souhaité</label>
+                    <input type="text" id="modalTreatmentName" name="Treatment" readonly class="w-full bg-neutral-100 border border-neutral-300 px-4 py-2.5 text-sm text-black font-semibold" />
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block font-label-caps text-xs text-black mb-1 uppercase font-bold">Date souhaitée</label>
+                        <input type="date" name="PreferredDate" class="w-full bg-white border border-neutral-300 px-4 py-2.5 text-sm text-black focus:outline-none focus:border-black" />
+                    </div>
+                    <div>
+                        <label class="block font-label-caps text-xs text-black mb-1 uppercase font-bold">Créneau</label>
+                        <select name="PreferredSlot" class="w-full bg-white border border-neutral-300 px-4 py-2.5 text-sm text-black focus:outline-none focus:border-black">
+                            <option value="Matinée (09:00 - 13:00)">Matinée (09:00 - 13:00)</option>
+                            <option value="Après-midi (13:00 - 16:00)">Après-midi (13:00 - 16:00)</option>
+                            <option value="Fin de journée (16:00 - 19:00)">Fin de journée (16:00 - 19:00)</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="w-full py-4 bg-black text-white hover:bg-[#C5A059] hover:text-black font-label-caps text-xs uppercase tracking-widest font-bold transition-all shadow-md mt-4">
+                    Confirmer ma Demande de Rendez-Vous
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white w-full py-10 border-t border-neutral-800 text-center text-xs font-label-caps text-neutral-400">
+        <div class="max-w-7xl mx-auto px-4">
+            <span class="font-headline-md text-xl text-white font-bold block mb-1">CENTRE LASER <span class="text-[#DFBA73]">LES OLIVIERS</span></span>
+            <p class="mb-4 text-neutral-400">Centre Médical de Laser Dermatologique &bull; Clinique Les Oliviers, Sousse</p>
+            <p>&copy; 2026 CENTRE LASER LES OLIVIERS. TOUS DROITS RÉSERVÉS.</p>
+        </div>
+    </footer>
+
+    <!-- INLINE DATA FOR 100% INSTANT SYNCHRONOUS LOADING -->
+    <script>
+// DERMATOLASER - Base de données des soins (utilisée par soin.html)
+const SOINS_DATA = [
+    {
+        id: "laser-co2-resurfacing",
+        category: "Visage",
+        categoryLabel: "Soins Visage",
+        badge: "Visage",
+        title: "Laser CO2 : Resurfacing & Anti-Âge",
+        tech: "Laser CO2 Fractionné & Ablatif",
+        tagline: "Lisser les rides profondes, affiner le grain de peau et effacer les signes du photovieillissement.",
+        image: "uploads/84c39be1-74a6-43bc-8434-a474b759a012.jpg",
+        duration: "45 min",
+        sessions: "1 à 3 séances",
+        interval: "6 à 8 semaines",
+        downtime: "5 à 7 jours",
+        reservation: "Laser CO2 : Resurfacing",
+        intro: [
+            "Le laser CO2 fractionné est la référence du resurfaçage cutané. Il crée des milliers de micro-colonnes thermiques dans la peau, qui éliminent les couches abîmées de l'épiderme et stimulent en profondeur la production de collagène et d'élastine.",
+            "Le résultat : une peau plus lisse, plus ferme et plus lumineuse, avec une nette atténuation des rides, ridules et irrégularités de texture. Les résultats continuent de s'améliorer pendant plusieurs mois après la séance."
+        ],
+        indications: ["Rides & ridules", "Photovieillissement", "Relâchement cutané", "Pores dilatés", "Teint terne", "Grain de peau irrégulier"],
+        benefits: [
+            "Peau visiblement plus lisse et plus ferme",
+            "Stimulation durable du collagène",
+            "Amélioration nette de la texture et de l'éclat",
+            "Résultats progressifs et naturels"
+        ],
+        steps: [
+            { title: "Consultation", text: "Analyse de votre peau, de votre phototype et de vos attentes par le médecin." },
+            { title: "Préparation", text: "Nettoyage du visage et application d'une crème anesthésiante pendant 45 minutes." },
+            { title: "Séance laser", text: "Passage du laser CO2 fractionné zone par zone, avec des paramètres sur mesure." },
+            { title: "Soins post-acte", text: "Application d'une crème cicatrisante et remise d'un protocole de soins à domicile." }
+        ],
+        before: [
+            "Éviter toute exposition solaire 3 à 4 semaines avant",
+            "Arrêter les rétinoïdes et peelings 1 semaine avant",
+            "Signaler tout antécédent d'herpès au médecin"
+        ],
+        after: [
+            "Rougeurs et légère desquamation pendant 5 à 7 jours",
+            "Hydratation intensive et crème cicatrisante",
+            "Protection solaire SPF 50+ obligatoire pendant 3 mois"
+        ],
+        faq: [
+            { q: "La séance est-elle douloureuse ?", a: "Grâce à la crème anesthésiante appliquée avant la séance, la sensation est bien tolérée : une chaleur et des picotements passagers." },
+            { q: "Quand voit-on les résultats ?", a: "Un premier effet éclat apparaît après la cicatrisation (7 à 10 jours). L'effet tenseur et le lissage des rides se renforcent pendant 3 à 6 mois." },
+            { q: "Quelle est la meilleure période pour ce traitement ?", a: "L'automne et l'hiver sont idéals, car il faut éviter le soleil pendant plusieurs semaines après la séance." }
+        ]
+    },
+    {
+        id: "laser-co2-cicatrices",
+        category: "Visage",
+        categoryLabel: "Soins Visage",
+        badge: "Visage",
+        title: "Laser CO2 : Traitement de cicatrice",
+        tech: "Laser CO2 Réparateur",
+        tagline: "Atténuer les cicatrices d'acné, chirurgicales ou post-traumatiques pour retrouver une peau uniforme.",
+        image: "uploads/7310824d-be03-457e-b255-4bfbafbcedf6.jpg",
+        duration: "40 min",
+        sessions: "3 à 5 séances",
+        interval: "6 à 8 semaines",
+        downtime: "4 à 6 jours",
+        reservation: "Laser CO2 : Traitement de cicatrice",
+        intro: [
+            "Les cicatrices, notamment celles laissées par l'acné, modifient le relief de la peau et sont souvent difficiles à camoufler. Le laser CO2 fractionné agit en profondeur pour remodeler le tissu cicatriciel.",
+            "En provoquant une régénération contrôlée de la peau, il comble progressivement les creux, lisse les reliefs et unifie la texture, séance après séance."
+        ],
+        indications: ["Cicatrices d'acné", "Cicatrices chirurgicales", "Cicatrices post-traumatiques", "Creux & reliefs", "Pores dilatés"],
+        benefits: [
+            "Comblement progressif des creux cicatriciels",
+            "Lissage du relief de la peau",
+            "Texture plus homogène et plus fine",
+            "Regain de confiance en soi"
+        ],
+        steps: [
+            { title: "Diagnostic", text: "Évaluation du type, de la profondeur et de l'ancienneté des cicatrices." },
+            { title: "Anesthésie locale", text: "Application d'une crème anesthésiante pour un confort optimal." },
+            { title: "Traitement ciblé", text: "Le laser CO2 est réglé spécifiquement pour remodeler chaque zone cicatricielle." },
+            { title: "Suivi", text: "Contrôle de la cicatrisation et ajustement du protocole à chaque séance." }
+        ],
+        before: [
+            "Éviter le soleil et l'autobronzant 3 semaines avant",
+            "Arrêter l'isotrétinoïne au moins 6 mois avant",
+            "Ne pas épiler ni gommer la zone la semaine précédente"
+        ],
+        after: [
+            "Rougeurs et petites croûtes pendant quelques jours",
+            "Ne pas gratter ni arracher les croûtes",
+            "Protection solaire SPF 50+ quotidienne"
+        ],
+        faq: [
+            { q: "Les cicatrices disparaissent-elles totalement ?", a: "L'objectif est une amélioration nette et visible (souvent 50 à 80 %). Le résultat dépend de la profondeur et du type de cicatrice." },
+            { q: "Peut-on traiter des cicatrices anciennes ?", a: "Oui, le laser CO2 est efficace aussi bien sur des cicatrices récentes que sur des cicatrices de plusieurs années." },
+            { q: "Combien de séances faut-il ?", a: "En moyenne 3 à 5 séances espacées de 6 à 8 semaines, selon la sévérité des cicatrices." }
+        ]
+    },
+    {
+        id: "laser-co2-papillomes",
+        category: "Visage",
+        categoryLabel: "Soins Visage",
+        badge: "Visage",
+        title: "Laser CO2 : Papillomes & Verrues",
+        tech: "Laser CO2 Chirurgical & Ablatif",
+        tagline: "Éliminer rapidement et proprement les excroissances cutanées bénignes, sans bistouri.",
+        image: "uploads/28b2d777-e26b-4d51-8720-e8168c52d4e2.jpg",
+        duration: "25 min",
+        sessions: "1 séance",
+        interval: "Contrôle à 4 semaines",
+        downtime: "Aucune à 3 jours",
+        reservation: "Laser CO2 : Traitement des papillomes & verrues",
+        intro: [
+            "Papillomes, acrochordons (petites boules de peau), verrues ou grains de beauté bénins peuvent être gênants esthétiquement ou s'irriter au frottement.",
+            "Le laser CO2 permet de les vaporiser avec une grande précision, sans saignement et sans suture. La cicatrisation est rapide et le risque de cicatrice est minimal."
+        ],
+        indications: ["Papillomes", "Acrochordons", "Verrues", "Kératoses séborrhéiques", "Grains de milium", "Lésions bénignes"],
+        benefits: [
+            "Élimination nette en une seule séance",
+            "Sans saignement ni points de suture",
+            "Cicatrisation rapide",
+            "Risque de cicatrice très faible"
+        ],
+        steps: [
+            { title: "Examen médical", text: "Le médecin vérifie le caractère bénin de chaque lésion avant le traitement." },
+            { title: "Anesthésie", text: "Crème anesthésiante ou petite anesthésie locale selon la zone." },
+            { title: "Vaporisation", text: "Chaque lésion est vaporisée au laser CO2 en quelques secondes." },
+            { title: "Pansement", text: "Application d'une crème cicatrisante et, si besoin, d'un petit pansement." }
+        ],
+        before: [
+            "Consultation médicale préalable obligatoire",
+            "Éviter l'exposition solaire de la zone",
+            "Signaler tout traitement anticoagulant"
+        ],
+        after: [
+            "Petite croûte qui tombe en 5 à 10 jours",
+            "Garder la zone propre et hydratée",
+            "Protéger du soleil pendant 1 mois"
+        ],
+        faq: [
+            { q: "Toutes les lésions peuvent-elles être traitées ?", a: "Seules les lésions jugées bénignes par le médecin sont traitées. En cas de doute, une analyse est proposée avant." },
+            { q: "Y a-t-il un risque de récidive ?", a: "Une lésion retirée ne revient généralement pas, mais de nouvelles lésions peuvent apparaître avec le temps." },
+            { q: "Combien de lésions peut-on traiter en une séance ?", a: "Plusieurs lésions peuvent être traitées lors de la même séance, selon leur nombre et leur localisation." }
+        ]
+    },
+    {
+        id: "traitement-acne",
+        category: "Visage",
+        categoryLabel: "Soins Visage",
+        badge: "Visage",
+        title: "Traitement Acné Laser",
+        tech: "Laser Candela — Anti-Acné",
+        tagline: "Réduire l'acné active et prévenir les récidives grâce à un traitement laser ciblé et sans médicament.",
+        image: "uploads/7310824d-be03-457e-b255-4bfbafbcedf6.jpg",
+        duration: "35 min",
+        sessions: "4 à 6 séances",
+        interval: "2 à 4 semaines",
+        downtime: "Aucune",
+        reservation: "Traitement Acné Laser",
+        intro: [
+            "L'acné touche aussi bien les adolescents que les adultes et peut laisser des marques durables. Le laser Candela agit directement sur les causes de l'acné.",
+            "Il réduit l'inflammation, régule la production de sébum et détruit les bactéries responsables des boutons, sans médicament par voie orale. La peau devient plus nette et plus saine."
+        ],
+        indications: ["Acné inflammatoire", "Acné de l'adulte", "Peau grasse", "Rougeurs post-acné", "Pores obstrués"],
+        benefits: [
+            "Diminution rapide des boutons inflammatoires",
+            "Régulation du sébum",
+            "Prévention des cicatrices d'acné",
+            "Sans traitement médicamenteux lourd"
+        ],
+        steps: [
+            { title: "Bilan cutané", text: "Analyse du type d'acné et de votre routine de soins actuelle." },
+            { title: "Nettoyage", text: "Préparation de la peau et protection des yeux." },
+            { title: "Séance laser", text: "Passage du laser sur les zones concernées, sensation de légère chaleur." },
+            { title: "Routine adaptée", text: "Conseils et routine de soins personnalisée pour optimiser les résultats." }
+        ],
+        before: [
+            "Éviter le soleil et le bronzage",
+            "Ne pas percer les boutons avant la séance",
+            "Venir sans maquillage si possible"
+        ],
+        after: [
+            "Légère rougeur passagère possible",
+            "Utiliser des soins non comédogènes",
+            "Protection solaire quotidienne"
+        ],
+        faq: [
+            { q: "Le traitement remplace-t-il les médicaments ?", a: "Il peut constituer une alternative ou un complément. Le médecin définit avec vous la meilleure stratégie." },
+            { q: "Est-ce adapté aux peaux sensibles ?", a: "Oui, les paramètres sont ajustés à chaque type de peau pour un traitement doux et sûr." },
+            { q: "Quand voit-on une amélioration ?", a: "Une diminution des boutons est généralement visible dès les 2 ou 3 premières séances." }
+        ]
+    },
+    {
+        id: "laser-vaginal",
+        category: "Corps",
+        categoryLabel: "Soins Corps",
+        badge: "Corps",
+        title: "Laser Vaginal : Rajeunissement",
+        tech: "Gynécologie Laser & Rajeunissement",
+        tagline: "Restaurer le confort intime et la qualité de la muqueuse, sans chirurgie et en toute discrétion.",
+        image: "uploads/b50e40f9-a9f9-4585-9c0c-5c149da4142a.webp",
+        duration: "30 min",
+        sessions: "3 séances",
+        interval: "4 à 6 semaines",
+        downtime: "Aucune",
+        reservation: "Laser Vaginal : Rajeunissement vaginal",
+        intro: [
+            "Avec l'âge, après un accouchement ou à la ménopause, la muqueuse vaginale peut perdre en élasticité et en hydratation, entraînant inconfort, sécheresse ou petites fuites urinaires.",
+            "Le laser vaginal stimule la régénération des tissus et la production de collagène. Ce traitement rapide, non chirurgical et pratiquement indolore améliore durablement le confort intime."
+        ],
+        indications: ["Sécheresse vaginale", "Atrophie vaginale", "Relâchement post-accouchement", "Incontinence urinaire d'effort légère", "Ménopause"],
+        benefits: [
+            "Amélioration de l'hydratation naturelle",
+            "Meilleure tonicité des tissus",
+            "Réduction des petites fuites urinaires",
+            "Traitement rapide, discret et sans chirurgie"
+        ],
+        steps: [
+            { title: "Consultation privée", text: "Entretien confidentiel et examen médical préalable." },
+            { title: "Installation", text: "Installation confortable dans une salle de soin privée." },
+            { title: "Séance laser", text: "Application de la sonde laser pendant quelques minutes, sans douleur." },
+            { title: "Reprise immédiate", text: "Retour immédiat à vos activités quotidiennes." }
+        ],
+        before: [
+            "Frottis de dépistage à jour",
+            "Absence d'infection gynécologique",
+            "Éviter la période des règles"
+        ],
+        after: [
+            "Éviter les rapports pendant 3 à 5 jours",
+            "Pas de bain ni piscine pendant 3 jours",
+            "Légères pertes possibles pendant quelques jours"
+        ],
+        faq: [
+            { q: "Le traitement est-il douloureux ?", a: "Non, la plupart des patientes ressentent seulement une légère chaleur. Aucune anesthésie n'est nécessaire." },
+            { q: "Combien de temps durent les résultats ?", a: "Les effets durent en moyenne 12 à 18 mois. Une séance d'entretien annuelle est recommandée." },
+            { q: "La consultation est-elle confidentielle ?", a: "Absolument. Toute la prise en charge se fait dans le respect total de votre intimité." }
+        ]
+    },
+    {
+        id: "epilation-alexandrite-ndyag",
+        category: "Corps",
+        categoryLabel: "Soins Corps",
+        badge: "Corps",
+        title: "Laser Épilation : Alexandrite / Nd:YAG",
+        tech: "Cynosure Elite Pro — Double longueur d'onde",
+        tagline: "L'épilation laser de référence, efficace sur tous les phototypes, des peaux claires aux peaux foncées.",
+        image: "uploads/90c9b692-e0d8-45fa-8f9b-5cef184caffe.jpg",
+        duration: "15 à 60 min",
+        sessions: "6 à 8 séances",
+        interval: "4 à 8 semaines",
+        downtime: "Aucune",
+        reservation: "Laser Épilation : Alexandrite / Nd:YAG (Cynosure Elite Pro)",
+        intro: [
+            "Le Cynosure Elite Pro associe deux lasers dans un seul appareil : l'Alexandrite 755 nm, idéal pour les peaux claires à mates, et le Nd:YAG 1064 nm, conçu pour les peaux foncées et noires.",
+            "Le laser cible la mélanine du poil et détruit le bulbe sans abîmer la peau. Après un protocole complet, la pilosité est réduite de façon durable, pour une peau douce au quotidien."
+        ],
+        indications: ["Visage", "Aisselles", "Maillot", "Jambes", "Dos & torse", "Poils incarnés"],
+        benefits: [
+            "Réduction durable de la pilosité",
+            "Adapté à tous les phototypes (I à VI)",
+            "Fin des poils incarnés et irritations",
+            "Refroidissement intégré pour plus de confort"
+        ],
+        steps: [
+            { title: "Test & phototype", text: "Détermination de votre phototype et test sur une petite zone." },
+            { title: "Préparation", text: "Rasage de la zone et protection des yeux." },
+            { title: "Séance laser", text: "Passage rapide du laser avec refroidissement continu de la peau." },
+            { title: "Apaisement", text: "Application d'un soin apaisant en fin de séance." }
+        ],
+        before: [
+            "Raser la zone la veille (ne pas épiler à la cire ou à la pince)",
+            "Pas d'exposition solaire ni d'autobronzant 3 semaines avant",
+            "Venir sans crème ni déodorant sur la zone"
+        ],
+        after: [
+            "Légère rougeur pendant quelques heures",
+            "Éviter sport intense, hammam et piscine 24 à 48 h",
+            "Protection solaire SPF 50+ sur les zones exposées"
+        ],
+        faq: [
+            { q: "L'épilation est-elle définitive ?", a: "On parle de réduction durable de la pilosité : 80 à 95 % des poils sont éliminés après un protocole complet. Une séance d'entretien peut être utile." },
+            { q: "Est-ce adapté aux peaux foncées ?", a: "Oui, la longueur d'onde Nd:YAG 1064 nm permet de traiter en toute sécurité les peaux foncées et noires." },
+            { q: "Les poils blonds ou blancs sont-ils traités ?", a: "Le laser cible la mélanine : les poils très clairs, roux ou blancs répondent peu. Le médecin vous conseillera lors de la consultation." }
+        ]
+    },
+    {
+        id: "epilation-laser-diode",
+        category: "Corps",
+        categoryLabel: "Soins Corps",
+        badge: "Corps",
+        title: "Laser Épilation : Laser Diode",
+        tech: "Plateau Épilation Laser Diode",
+        tagline: "Une épilation laser rapide et confortable, idéale pour les grandes zones du corps.",
+        image: "uploads/3604a82e-206c-4e08-ac72-6f82895945e1.jpg",
+        duration: "20 à 60 min",
+        sessions: "6 à 8 séances",
+        interval: "4 à 8 semaines",
+        downtime: "Aucune",
+        reservation: "Laser Épilation : Laser Diode",
+        intro: [
+            "Le laser Diode est une technologie d'épilation performante, particulièrement adaptée au traitement des grandes surfaces comme les jambes, le dos ou le torse.",
+            "Sa grande pièce à main et son système de refroidissement permettent des séances rapides et confortables, pour une réduction progressive et durable de la pilosité."
+        ],
+        indications: ["Jambes complètes", "Dos", "Torse", "Bras", "Aisselles", "Maillot"],
+        benefits: [
+            "Séances rapides sur les grandes zones",
+            "Grand confort grâce au refroidissement",
+            "Peau douce et nette durablement",
+            "Excellent rapport efficacité / temps"
+        ],
+        steps: [
+            { title: "Consultation", text: "Évaluation de la pilosité et du phototype, définition des zones." },
+            { title: "Préparation", text: "Rasage de la zone, application du gel de contact." },
+            { title: "Séance laser", text: "Traitement rapide en balayage continu de la zone." },
+            { title: "Soin apaisant", text: "Nettoyage et application d'une crème apaisante." }
+        ],
+        before: [
+            "Raser la zone 24 h avant",
+            "Éviter le soleil 3 semaines avant",
+            "Ne pas utiliser de cire ni de pince entre les séances"
+        ],
+        after: [
+            "Rougeurs légères pendant quelques heures",
+            "Pas de sauna ni de hammam pendant 48 h",
+            "Protection solaire sur les zones exposées"
+        ],
+        faq: [
+            { q: "Quelle différence avec l'Alexandrite / Nd:YAG ?", a: "Les deux sont efficaces. Le médecin choisit la technologie la plus adaptée à votre phototype, votre type de poil et la zone traitée." },
+            { q: "Combien de séances faut-il ?", a: "En moyenne 6 à 8 séances, car seuls les poils en phase de croissance sont détruits à chaque séance." },
+            { q: "Peut-on se raser entre les séances ?", a: "Oui, le rasage est autorisé. En revanche, la cire et la pince sont à proscrire." }
+        ]
+    },
+    {
+        id: "photorajeunissement-tightening",
+        category: "Corps",
+        categoryLabel: "Soins Corps",
+        badge: "Corps",
+        title: "Photorajeunissement & Tightening",
+        tech: "Laser Candela — Rajeunissement",
+        tagline: "Une peau plus ferme, plus lumineuse et plus jeune, sans éviction sociale.",
+        image: "uploads/90c9b692-e0d8-45fa-8f9b-5cef184caffe.jpg",
+        duration: "45 min",
+        sessions: "3 à 5 séances",
+        interval: "3 à 4 semaines",
+        downtime: "Aucune",
+        reservation: "Photorajeunissement & Tightening",
+        intro: [
+            "Le photorajeunissement associé au tightening (raffermissement) agit sur deux signes majeurs du vieillissement : la perte d'éclat et le relâchement de la peau.",
+            "L'énergie du laser chauffe en douceur les couches profondes de la peau, ce qui resserre les fibres de collagène et stimule leur renouvellement. La peau retrouve fermeté, uniformité et luminosité."
+        ],
+        indications: ["Relâchement cutané", "Perte d'éclat", "Ridules", "Teint irrégulier", "Cou & décolleté", "Mains"],
+        benefits: [
+            "Effet tenseur progressif",
+            "Teint plus uniforme et lumineux",
+            "Aucune éviction sociale",
+            "Traitement doux et confortable"
+        ],
+        steps: [
+            { title: "Analyse", text: "Évaluation de la qualité de la peau et des zones à raffermir." },
+            { title: "Préparation", text: "Démaquillage et protection oculaire." },
+            { title: "Séance laser", text: "Chauffage progressif et contrôlé des tissus, sensation de chaleur agréable." },
+            { title: "Résultat immédiat", text: "Effet bonne mine immédiat, reprise directe de vos activités." }
+        ],
+        before: [
+            "Éviter le soleil et le bronzage 2 semaines avant",
+            "Arrêter les peelings 1 semaine avant",
+            "Venir avec une peau propre"
+        ],
+        after: [
+            "Légère rougeur possible pendant 1 à 2 heures",
+            "Bien hydrater la peau",
+            "Protection solaire quotidienne"
+        ],
+        faq: [
+            { q: "Peut-on se maquiller après la séance ?", a: "Oui, le maquillage est possible dès le lendemain, voire le jour même selon la sensibilité de la peau." },
+            { q: "Combien de temps durent les résultats ?", a: "Les résultats durent plusieurs mois. Une séance d'entretien tous les 6 à 12 mois est conseillée." },
+            { q: "Quelles zones peut-on traiter ?", a: "Le visage, le cou, le décolleté, les mains et certaines zones du corps." }
+        ]
+    },
+    {
+        id: "lesions-vasculaires",
+        category: "Vasculaire",
+        categoryLabel: "Lésions Vasculaires",
+        badge: "Vasculaire",
+        title: "Lésions Vasculaires",
+        tech: "Laser Candela — Nd:YAG / KTP",
+        tagline: "Effacer couperose, rougeurs, angiomes et petits vaisseaux visibles pour un teint unifié.",
+        image: "uploads/84c39be1-74a6-43bc-8434-a474b759a012.jpg",
+        duration: "30 min",
+        sessions: "1 à 3 séances",
+        interval: "4 à 6 semaines",
+        downtime: "Aucune à 48 h",
+        reservation: "Lésions Vasculaires",
+        intro: [
+            "Les lésions vasculaires sont des petits vaisseaux sanguins dilatés et visibles sous la peau : couperose, rosacée, angiomes, taches rubis ou varicosités des jambes.",
+            "Le laser Candela cible sélectivement l'hémoglobine contenue dans ces vaisseaux. Ils sont refermés puis éliminés naturellement par l'organisme, sans abîmer la peau autour."
+        ],
+        indications: ["Couperose", "Rosacée", "Angiomes", "Taches rubis", "Télangiectasies", "Varicosités des jambes"],
+        benefits: [
+            "Disparition des vaisseaux visibles",
+            "Teint plus uniforme et apaisé",
+            "Résultats rapides en peu de séances",
+            "Traitement précis et sécurisé"
+        ],
+        steps: [
+            { title: "Diagnostic", text: "Identification du type de lésion vasculaire et de sa profondeur." },
+            { title: "Protection", text: "Protection des yeux et application d'un gel de contact." },
+            { title: "Séance laser", text: "Impulsions ciblées sur chaque vaisseau, sensation d'élastique qui claque." },
+            { title: "Apaisement", text: "Refroidissement de la peau et application d'un soin apaisant." }
+        ],
+        before: [
+            "Éviter le soleil 3 semaines avant",
+            "Ne pas prendre d'aspirine quelques jours avant (sauf avis médical)",
+            "Venir sans maquillage"
+        ],
+        after: [
+            "Rougeur ou léger gonflement pendant 24 à 48 h",
+            "Éviter chaleur intense, sport et hammam 48 h",
+            "Protection solaire SPF 50+"
+        ],
+        faq: [
+            { q: "Les vaisseaux traités peuvent-ils revenir ?", a: "Les vaisseaux traités disparaissent définitivement, mais de nouveaux peuvent apparaître selon votre terrain. Une séance d'entretien peut être utile." },
+            { q: "Peut-on traiter les jambes ?", a: "Oui, les petites varicosités des jambes peuvent être traitées. Les varices plus importantes nécessitent un avis spécialisé." },
+            { q: "Combien de séances faut-il ?", a: "Souvent 1 à 3 séances selon l'étendue et le type de lésions." }
+        ]
+    },
+    {
+        id: "sylfirm-x",
+        category: "Tech",
+        categoryLabel: "Technologies Avancées",
+        badge: "RF Microneedling",
+        title: "RF Microneedling Sylfirm X",
+        tech: "Sylfirm X — Double Mode RF",
+        tagline: "La technologie qui combine micro-aiguilles et radiofréquence pour régénérer la peau en profondeur.",
+        image: "uploads/7310824d-be03-457e-b255-4bfbafbcedf6.jpg",
+        duration: "60 min",
+        sessions: "3 à 5 séances",
+        interval: "4 semaines",
+        downtime: "24 à 48 h",
+        reservation: "RF Microneedling Sylfirm X",
+        intro: [
+            "Sylfirm X est un système de microneedling par radiofréquence unique, doté de deux modes : un mode pulsé qui agit sur les vaisseaux et la pigmentation, et un mode continu qui stimule le collagène en profondeur.",
+            "Les micro-aiguilles délivrent la radiofréquence exactement là où elle est nécessaire. Résultat : un traitement polyvalent pour le mélasma, la rosacée, les rides, le relâchement, les cicatrices et les vergetures."
+        ],
+        indications: ["Mélasma", "Rosacée", "Pores dilatés", "Rides & relâchement", "Double menton", "Cicatrices & vergetures"],
+        benefits: [
+            "Traitement polyvalent en une seule technologie",
+            "Efficace sur le mélasma résistant",
+            "Raffermissement et lissage visibles",
+            "Adapté à tous les phototypes"
+        ],
+        steps: [
+            { title: "Consultation", text: "Choix du mode (pulsé ou continu) selon votre problématique." },
+            { title: "Anesthésie", text: "Application d'une crème anesthésiante pendant 45 minutes." },
+            { title: "Séance Sylfirm X", text: "Passage de la pièce à main sur les zones, avec profondeur ajustée." },
+            { title: "Soin réparateur", text: "Application d'un masque et d'un soin apaisant en fin de séance." }
+        ],
+        before: [
+            "Éviter le soleil 2 semaines avant",
+            "Arrêter les rétinoïdes 5 jours avant",
+            "Venir sans maquillage"
+        ],
+        after: [
+            "Rougeurs pendant 24 à 48 h",
+            "Pas de maquillage pendant 24 h",
+            "Protection solaire SPF 50+ et hydratation"
+        ],
+        faq: [
+            { q: "Quelle différence avec un microneedling classique ?", a: "La radiofréquence ajoutée aux micro-aiguilles chauffe les tissus en profondeur, ce qui renforce fortement la production de collagène et les résultats." },
+            { q: "Est-ce efficace sur le mélasma ?", a: "Oui, le mode pulsé de Sylfirm X est reconnu pour agir sur les vaisseaux qui entretiennent le mélasma, ce qui en fait une option de choix." },
+            { q: "Est-ce douloureux ?", a: "Grâce à la crème anesthésiante, la séance est bien tolérée. Vous ressentirez des picotements et une sensation de chaleur." }
+        ]
+    },
+    {
+        id: "detatouage",
+        category: "Tech",
+        categoryLabel: "Technologies Avancées",
+        badge: "Détatouage",
+        title: "Détatouage Laser",
+        tech: "Laser Candela — Q-Switch",
+        tagline: "Effacer progressivement un tatouage, toutes couleurs d'encre confondues.",
+        image: "uploads/28b2d777-e26b-4d51-8720-e8168c52d4e2.jpg",
+        duration: "15 à 45 min",
+        sessions: "5 à 10 séances",
+        interval: "6 à 8 semaines",
+        downtime: "3 à 7 jours",
+        reservation: "Détatouage Laser",
+        intro: [
+            "Un tatouage qui ne vous ressemble plus ? Le laser Q-Switch émet des impulsions ultra-courtes et puissantes qui fragmentent les pigments d'encre en particules microscopiques.",
+            "Ces micro-particules sont ensuite éliminées naturellement par le système lymphatique. Séance après séance, le tatouage s'éclaircit jusqu'à s'effacer, tout en préservant la peau."
+        ],
+        indications: ["Tatouages noirs", "Tatouages colorés", "Tatouages amateurs", "Maquillage permanent", "Éclaircissement avant recouvrement"],
+        benefits: [
+            "Efficace sur la majorité des couleurs d'encre",
+            "Respect de la peau environnante",
+            "Effacement progressif et maîtrisé",
+            "Possible éclaircissement pour un nouveau tatouage"
+        ],
+        steps: [
+            { title: "Évaluation", text: "Analyse de la taille, des couleurs et de l'ancienneté du tatouage." },
+            { title: "Anesthésie", text: "Crème anesthésiante et refroidissement de la zone." },
+            { title: "Séance laser", text: "Impulsions laser sur l'ensemble du tatouage." },
+            { title: "Pansement", text: "Application d'une crème cicatrisante et d'un pansement protecteur." }
+        ],
+        before: [
+            "Éviter le soleil et le bronzage 4 semaines avant",
+            "Peau saine, sans irritation sur la zone",
+            "Signaler tout traitement photosensibilisant"
+        ],
+        after: [
+            "Rougeur, gonflement et petites cloques possibles",
+            "Garder le pansement 24 à 48 h et ne pas gratter",
+            "Protection solaire stricte de la zone"
+        ],
+        faq: [
+            { q: "Le tatouage peut-il disparaître complètement ?", a: "Dans la majorité des cas, un effacement très important est obtenu. Certaines couleurs (vert, bleu clair) peuvent nécessiter plus de séances." },
+            { q: "Combien de séances faut-il ?", a: "En moyenne 5 à 10 séances selon la taille, la densité d'encre, les couleurs et l'ancienneté du tatouage." },
+            { q: "Est-ce douloureux ?", a: "La sensation est comparable à celle du tatouage, mais la séance est beaucoup plus courte. La crème anesthésiante améliore le confort." }
+        ]
+    },
+    {
+        id: "lesions-pigmentaires",
+        category: "Tech",
+        categoryLabel: "Technologies Avancées",
+        badge: "Pigmentation",
+        title: "Lésions Pigmentaires",
+        tech: "Laser Candela — Dépigmentation",
+        tagline: "Atténuer les taches brunes, solaires et le mélasma pour un teint plus clair et uniforme.",
+        image: "uploads/84c39be1-74a6-43bc-8434-a474b759a012.jpg",
+        duration: "30 min",
+        sessions: "1 à 4 séances",
+        interval: "4 à 6 semaines",
+        downtime: "5 à 7 jours (micro-croûtes)",
+        reservation: "Lésions Pigmentaires",
+        intro: [
+            "Les taches pigmentaires apparaissent avec le soleil, l'âge ou les variations hormonales : taches solaires, lentigos, taches de vieillesse ou mélasma.",
+            "Le laser Candela cible sélectivement l'excès de mélanine. Les taches foncent légèrement, forment de fines micro-croûtes puis s'éliminent naturellement, laissant place à une peau plus claire."
+        ],
+        indications: ["Taches solaires", "Lentigos", "Taches de vieillesse", "Mélasma", "Éphélides", "Hyperpigmentation post-inflammatoire"],
+        benefits: [
+            "Taches nettement éclaircies ou effacées",
+            "Teint plus uniforme et lumineux",
+            "Traitement précis et ciblé",
+            "Peu de séances nécessaires"
+        ],
+        steps: [
+            { title: "Diagnostic", text: "Examen des taches et vérification de leur caractère bénin." },
+            { title: "Préparation", text: "Démaquillage et protection oculaire." },
+            { title: "Séance laser", text: "Impulsions ciblées sur chaque tache, sensation de légers picotements." },
+            { title: "Suivi", text: "Conseils post-soin et protocole de protection solaire." }
+        ],
+        before: [
+            "Aucune exposition solaire 4 semaines avant",
+            "Pas d'autobronzant ni de peeling",
+            "Signaler la prise de médicaments photosensibilisants"
+        ],
+        after: [
+            "Les taches foncent puis forment de fines croûtes",
+            "Laisser tomber les croûtes naturellement (5 à 7 jours)",
+            "Protection solaire SPF 50+ indispensable"
+        ],
+        faq: [
+            { q: "Les taches peuvent-elles revenir ?", a: "Les taches traitées s'effacent, mais une exposition solaire sans protection peut en faire apparaître de nouvelles. La protection solaire est essentielle." },
+            { q: "Le mélasma peut-il être traité ?", a: "Oui, avec un protocole doux et adapté, souvent associé à des soins dépigmentants. Le mélasma demande un suivi régulier." },
+            { q: "Combien de séances faut-il ?", a: "Les taches solaires disparaissent souvent en 1 à 2 séances. Le mélasma nécessite généralement plus de séances." }
+        ]
+    }
+];
+
+function getSoinById(id) {
+    return SOINS_DATA.find(s => s.id === id) || null;
+}
+
+
+    </script>
+
+    <!-- Page Logic -->
+    <script>
+        let currentReservationName = '';
+
+        function openReservationModal(treatmentName) {
+            const modal = document.getElementById('reservationModal');
+            const input = document.getElementById('modalTreatmentName');
+            if (modal) {
+                if (input && treatmentName) input.value = treatmentName;
+                modal.classList.remove('hidden');
+            }
+        }
+
+        function closeReservationModal() {
+            const modal = document.getElementById('reservationModal');
+            if (modal) modal.classList.add('hidden');
+        }
+
+        function handleReservationSubmit(e) {
+            e.preventDefault();
+            alert('Merci ! Votre demande a bien été envoyée. Notre équipe médicale vous contactera dans les plus brefs délais.');
+            closeReservationModal();
+        }
+
+        function toggleFaqItem(idx) {
+            const ans = document.getElementById('faq-ans-' + idx);
+            const icon = document.getElementById('faq-icon-' + idx);
+            if (ans) {
+                const isHidden = ans.classList.contains('hidden');
+                if (isHidden) {
+                    ans.classList.remove('hidden');
+                    if (icon) icon.textContent = 'expand_less';
+                } else {
+                    ans.classList.add('hidden');
+                    if (icon) icon.textContent = 'expand_more';
+                }
+            }
+        }
+
+        // Render function
+        (function render() {
+            const params = new URLSearchParams(window.location.search);
+            const reqId = params.get('id');
+            let soin = (typeof getSoinById === 'function') ? getSoinById(reqId) : null;
+            if (!soin && typeof SOINS_DATA !== 'undefined' && SOINS_DATA.length > 0) {
+                soin = SOINS_DATA[0];
+            }
+
+            if (!soin) return;
+
+            currentReservationName = soin.title;
+            document.getElementById('pageTitle').textContent = soin.title + ' - DERMATOLASER Sousse';
+            document.getElementById('crumbTitle').textContent = soin.title;
+
+            // Populate treatment switcher dropdown
+            const switcher = document.getElementById('treatmentSwitcher');
+            if (switcher && typeof SOINS_DATA !== 'undefined') {
+                switcher.innerHTML = '<option value="" disabled>Sélectionner un autre soin...</option>';
+                SOINS_DATA.forEach(s => {
+                    const opt = document.createElement('option');
+                    opt.value = s.id;
+                    opt.textContent = s.title + ' (' + s.category + ')';
+                    if (s.id === soin.id) opt.selected = true;
+                    switcher.appendChild(opt);
+                });
+            }
+
+            // Image & Badges
+            const img = document.getElementById('detailImage');
+            img.src = soin.image;
+            img.alt = soin.title;
+
+            document.getElementById('detailBadge').textContent = soin.badge;
+            document.getElementById('detailDurationTag').textContent = soin.duration;
+
+            // Text
+            document.getElementById('detailTech').textContent = soin.tech;
+            document.getElementById('detailTitle').textContent = soin.title;
+            document.getElementById('detailTagline').textContent = soin.tagline;
+
+            // Intro
+            const introDiv = document.getElementById('detailIntro');
+            soin.intro.forEach(p => {
+                const el = document.createElement('p');
+                el.textContent = p;
+                introDiv.appendChild(el);
+            });
+
+            // Indications
+            const indDiv = document.getElementById('detailIndications');
+            soin.indications.forEach(tag => {
+                const span = document.createElement('span');
+                span.className = 'px-3 py-1.5 bg-[#FAF6ED] border border-[#C5A059]/40 text-[#9E7D3B] font-label-caps text-[11px] uppercase tracking-wider font-bold shadow-sm';
+                span.textContent = tag;
+                indDiv.appendChild(span);
+            });
+
+            // Benefits
+            const benDiv = document.getElementById('detailBenefits');
+            soin.benefits.forEach(b => {
+                const div = document.createElement('div');
+                div.className = 'flex items-center gap-2 text-sm text-neutral-800 font-medium p-2.5 bg-neutral-50 border border-neutral-100 hover:border-[#C5A059] transition-colors';
+                div.innerHTML = '<span class="material-symbols-outlined text-sm text-[#C5A059]">check_circle</span><span></span>';
+                div.lastChild.textContent = b;
+                benDiv.appendChild(div);
+            });
+
+            // WhatsApp link
+            const wa = document.getElementById('btnWhatsapp');
+            wa.href = 'https://wa.me/21621040266?text=' + encodeURIComponent('Bonjour, je souhaite des informations sur le soin : ' + soin.title);
+
+            // Steps
+            const stepsDiv = document.getElementById('detailSteps');
+            soin.steps.forEach((step, i) => {
+                const card = document.createElement('div');
+                card.className = 'p-6 border border-neutral-200 bg-neutral-50/50 hover:bg-white hover:border-[#C5A059] hover:shadow-md transition-all duration-300 flex flex-col justify-between group';
+                card.innerHTML =
+                    '<div class="flex items-center justify-between mb-4">' +
+                        '<span class="font-headline-lg text-3xl text-[#DFBA73] font-black group-hover:scale-105 transition-transform">0' + (i + 1) + '</span>' +
+                        '<span class="w-1.5 h-1.5 rounded-full bg-neutral-300 group-hover:bg-[#C5A059] transition-colors"></span>' +
+                    '</div>' +
+                    '<h4 class="font-headline-md text-base font-bold text-black mb-2"></h4>' +
+                    '<p class="font-body-md text-xs text-neutral-600 leading-relaxed"></p>';
+                card.querySelector('h4').textContent = step.title;
+                card.querySelector('p').textContent = step.text;
+                stepsDiv.appendChild(card);
+            });
+
+            // FAQ
+            const faqDiv = document.getElementById('detailFaq');
+            soin.faq.forEach((f, i) => {
+                const item = document.createElement('div');
+                item.className = 'border border-neutral-200 hover:border-neutral-300 transition-colors bg-white';
+                item.innerHTML =
+                    '<button type="button" onclick="toggleFaqItem(' + i + ')" class="w-full flex justify-between items-center p-5 text-left font-headline-md text-sm sm:text-base font-bold text-black hover:bg-neutral-50/80 transition-colors">' +
+                        '<span></span>' +
+                        '<span id="faq-icon-' + i + '" class="material-symbols-outlined text-[#DFBA73] transition-transform">expand_more</span>' +
+                    '</button>' +
+                    '<div id="faq-ans-' + i + '" class="px-5 pb-5 text-sm text-neutral-600 leading-relaxed hidden border-t border-neutral-100 pt-3">' +
+                        '<p></p>' +
+                    '</div>';
+                item.querySelector('button span').textContent = f.q;
+                item.querySelector('.hidden p').textContent = f.a;
+                faqDiv.appendChild(item);
+            });
+
+        })();
+    </script>
+    <script src="js/site.js?v=5"></script>
+</body>
+</html>

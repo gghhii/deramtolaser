@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html class="light" lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le Centre & Direction Médicale - DERMATOLASER Sousse</title>
+    <meta name="description" content="Découvrez le centre DERMATOLASER Sousse : plateau médicalisé de classe IV, environnement serein et discret au sein de la Clinique Les Oliviers, Sousse." />
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#000000",
+                        "on-surface": "#000000",
+                        "on-tertiary-container": "#000000",
+                        "on-secondary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-highest": "#E5E7EB",
+                        "surface": "#FFFFFF",
+                        "surface-tint": "#000000",
+                        "on-background": "#111827",
+                        "surface-bright": "#FFFFFF",
+                        "background": "#FFFFFF",
+                        "surface-container-low": "#F9FAFB",
+                        "surface-container": "#F3F4F6",
+                        "deep-charcoal": "#000000",
+                        "soft-cream": "#FFFFFF",
+                        "warm-sand": "#E5E7EB",
+                        "luxury-gold": "#C5A059",
+                        "gold-light": "#FAF6ED",
+                        "gold-dark": "#9E7D3B",
+                        "gold-bright": "#D4AF37"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "none": "0px",
+                        "sm": "0px",
+                        "md": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "2xl": "0px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "gutter": "32px",
+                        "section-gap": "96px",
+                        "margin-desktop": "64px",
+                        "element-gap": "24px"
+                    },
+                    "fontFamily": {
+                        "label-ui": ["Plus Jakarta Sans", "sans-serif"],
+                        "label-caps": ["Plus Jakarta Sans", "sans-serif"],
+                        "display-xl-mobile": ["Plus Jakarta Sans", "sans-serif"],
+                        "body-md": ["Plus Jakarta Sans", "sans-serif"],
+                        "headline-md": ["Plus Jakarta Sans", "sans-serif"],
+                        "headline-lg": ["Plus Jakarta Sans", "sans-serif"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans", "sans-serif"],
+                        "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+                        "display-xl": ["Plus Jakarta Sans", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/site.css" />
+</head>
+<body class="bg-white text-neutral-900 font-body-md antialiased min-h-screen flex flex-col justify-between overflow-x-hidden selection:bg-black selection:text-white">
+
+    <!-- Main Navigation Bar -->
+    <header class="sticky top-0 w-full z-40 transition-all duration-300 border-b border-neutral-200 bg-white/95 backdrop-blur-md" id="main-nav">
+        <div class="flex justify-between items-center px-4 sm:px-6 lg:px-12 h-20 max-w-[1440px] mx-auto w-full gap-4">
+            
+            <a href="index.html" class="flex flex-col group flex-shrink-0 mr-4 lg:mr-8">
+                <span class="font-headline-md text-lg sm:text-xl md:text-[22px] font-extrabold tracking-tight text-black group-hover:opacity-90 transition-opacity whitespace-nowrap leading-none">
+                    CENTRE LASER <span class="text-[#C5A059]">LES OLIVIERS</span>
+                </span>
+                <span class="font-label-caps text-[8px] sm:text-[8.5px] uppercase tracking-[0.22em] text-[#9E7D3B] font-bold whitespace-nowrap mt-1">
+                    Dermatologie &amp; Esthétique Médicale
+                </span>
+            </a>
+
+            <nav class="hidden lg:flex items-center justify-center gap-5 xl:gap-7 flex-grow">
+                <a href="index.html" class="font-label-caps text-xs text-neutral-600 hover:text-black transition-colors uppercase font-medium tracking-wider whitespace-nowrap py-1">Accueil</a>
+                <a href="le-centre.html?v=2" class="font-label-caps text-xs text-black hover:text-[#9E7D3B] transition-colors uppercase font-bold tracking-wider whitespace-nowrap py-1">Le Centre</a>
+                <a href="tous-les-soins.html" class="font-label-caps text-xs text-neutral-600 hover:text-black transition-colors uppercase font-medium tracking-wider whitespace-nowrap py-1">Nos Soins</a>
+                <a href="avant-apres.html" class="font-label-caps text-xs text-neutral-600 hover:text-black transition-colors uppercase font-medium tracking-wider whitespace-nowrap py-1">Avant / Après</a>
+                <a href="avis.html" class="font-label-caps text-xs text-neutral-600 hover:text-black transition-colors uppercase font-medium tracking-wider whitespace-nowrap py-1">Avis</a>
+                <a href="contact.html" class="font-label-caps text-xs text-neutral-600 hover:text-black transition-colors uppercase font-medium tracking-wider whitespace-nowrap py-1">Contact</a>
+            </nav>
+
+            <div class="flex items-center gap-3 flex-shrink-0 ml-2 lg:ml-6">
+                <button onclick="openReservationModal()" class="hidden sm:inline-flex items-center gap-2 font-label-caps text-xs bg-black text-white border border-[#C5A059]/60 px-6 py-2.5 hover:bg-[#C5A059] hover:text-black hover:border-[#C5A059] transition-all uppercase tracking-widest duration-300 font-bold whitespace-nowrap shadow-sm">
+                    <span class="material-symbols-outlined text-sm text-[#DFBA73] group-hover:text-black">calendar_month</span> Réserver
+                </button>
+
+                <button onclick="toggleMobileMenu()" class="lg:hidden p-2 text-black hover:text-[#C5A059] transition-colors" aria-label="Menu Mobile">
+                    <span class="material-symbols-outlined text-3xl">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Slide-Out Navigation Drawer -->
+    <div id="mobileMenuBackdrop" onclick="toggleMobileMenu()" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+    <div id="mobileMenuDrawer" class="fixed top-0 right-0 h-full w-[85%] max-w-md bg-white z-50 shadow-2xl p-6 flex flex-col justify-between translate-x-full border-l border-neutral-200">
+        <div>
+            <div class="flex justify-between items-center pb-6 border-b border-neutral-200">
+                <div>
+                    <span class="font-headline-md text-lg font-extrabold text-black block leading-tight">CENTRE LASER <span class="text-[#C5A059]">LES OLIVIERS</span></span>
+                    <span class="font-label-caps text-[9px] uppercase tracking-widest text-[#9E7D3B] font-semibold">Clinique Les Oliviers &bull; Sousse</span>
+                </div>
+                <button onclick="toggleMobileMenu()" class="p-2 text-black hover:opacity-60">
+                    <span class="material-symbols-outlined text-2xl">close</span>
+                </button>
+            </div>
+
+            <nav class="flex flex-col py-6 space-y-3">
+                <a href="index.html" onclick="toggleMobileMenu()" class="font-label-caps text-xs text-black hover:text-[#9E7D3B] uppercase tracking-wider py-2 border-b border-neutral-100">Accueil</a>
+                <a href="le-centre.html?v=2" onclick="toggleMobileMenu()" class="font-label-caps text-xs text-black hover:text-[#9E7D3B] uppercase tracking-wider py-2 border-b border-neutral-100 font-bold">Le Centre &amp; Équipe</a>
+                <a href="tous-les-soins.html" onclick="toggleMobileMenu()" class="font-label-caps text-xs text-black hover:text-[#9E7D3B] uppercase tracking-wider py-2 border-b border-neutral-100">Nos Soins</a>
+                <a href="avant-apres.html" onclick="toggleMobileMenu()" class="font-label-caps text-xs text-black hover:text-[#9E7D3B] uppercase tracking-wider py-2 border-b border-neutral-100">Résultats Avant / Après</a>
+                <a href="avis.html" onclick="toggleMobileMenu()" class="font-label-caps text-xs text-black hover:text-[#9E7D3B] uppercase tracking-wider py-2 border-b border-neutral-100">Avis &amp; Témoignages</a>
+                <a href="contact.html" onclick="toggleMobileMenu()" class="font-label-caps text-xs text-black hover:text-[#9E7D3B] uppercase tracking-wider py-2">Contact &amp; Accès</a>
+            </nav>
+        </div>
+
+        <div class="space-y-3 pt-6 border-t border-neutral-200">
+            <button onclick="toggleMobileMenu(); openReservationModal()" class="w-full py-3.5 bg-black text-white border border-[#C5A059]/60 font-label-caps text-xs tracking-widest uppercase hover:bg-[#C5A059] hover:text-black transition-colors flex items-center justify-center gap-2 font-bold shadow-md">
+                <span class="material-symbols-outlined text-sm text-[#DFBA73]">calendar_month</span> Réserver une Consultation
+            </button>
+            <a href="tel:+21673000111" class="w-full py-3 border border-black text-black font-label-caps text-xs tracking-widest uppercase text-center flex items-center justify-center gap-2 hover:border-[#C5A059] hover:text-[#9E7D3B] transition-colors">
+                <span class="material-symbols-outlined text-sm text-[#9E7D3B]">call</span> +216 73 000 111
+            </a>
+        </div>
+    </div>
+
+    <main class="bg-white">
+        <!-- 1. SECTION: LE CENTRE -->
+        <section class="py-14 md:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+                
+                <!-- Left Column: Introduction du Centre & Philosophie Médicale -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#FAF6ED] text-[#9E7D3B] border border-[#C5A059]/40 font-label-caps text-xs uppercase tracking-widest font-bold shadow-sm">
+                        <span class="w-1.5 h-1.5 rounded-full bg-[#DFBA73] animate-pulse"></span> Clinique Les Oliviers &bull; Sousse
+                    </div>
+
+                    <h1 class="font-headline-lg text-3xl sm:text-4xl md:text-5xl text-black font-bold tracking-tight leading-tight">
+                        Le Centre Médical <span class="text-[#9E7D3B]">DERMATOLASER</span>
+                    </h1>
+
+                    <p class="font-body-lg text-base sm:text-lg text-neutral-800 font-semibold leading-relaxed border-l-2 border-[#DFBA73] pl-4">
+                        Établissement d'excellence dédié à la dermatologie médicale, au plateau laser de haute puissance et aux technologies cutanées de pointe à Sousse.
+                    </p>
+
+                    <div class="space-y-4 text-sm font-body-md text-neutral-700 leading-relaxed">
+                        <p>
+                            Situé au cœur de la prestigieuse <strong>Clinique Les Oliviers à Sousse</strong>, le centre <strong>DERMATOLASER</strong> allie la rigueur et la sécurité d'un environnement clinique hospitalier moderne à des équipements laser médicaux certifiés <strong>CE Médical &amp; FDA</strong>. 
+                        </p>
+                        <p>
+                            Notre mission est d'offrir des protocoles dermatologiques de haute précision, guidés par la science, l'éthique médicale et une écoute personnalisée. Chaque patient bénéficie d'une prise en charge globale : du diagnostic initial avec examen approfondi de la peau, jusqu'au suivi post-acte sur mesure, dans des suites de soins individuelles garantissant une confidentialité et un confort absolus.
+                        </p>
+                        <p>
+                            Que ce soit pour le relissage des rides, la réparation des cicatrices d'acné, l'épilation laser définitive de tous phototypes, le traitement des lésions vasculaires et pigmentaires ou le rajeunissement cutané, nos médecins adaptent chaque paramètre d'énergie aux besoins biologiques précis de votre peau.
+                        </p>
+                    </div>
+
+                    <!-- Key Pillars -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-3 pb-2">
+                        <div class="p-4 bg-neutral-50 border border-neutral-200 hover:border-[#C5A059] transition-colors">
+                            <span class="material-symbols-outlined text-[#DFBA73] text-2xl mb-1.5 block">verified_user</span>
+                            <span class="font-headline-md text-xs font-bold text-black block mb-0.5">Plateau Laser Certifié</span>
+                            <span class="font-body-md text-[11px] text-neutral-500 leading-snug">Dispositifs médicaux classe IV (CE &amp; FDA)</span>
+                        </div>
+                        <div class="p-4 bg-neutral-50 border border-neutral-200 hover:border-[#C5A059] transition-colors">
+                            <span class="material-symbols-outlined text-[#DFBA73] text-2xl mb-1.5 block">lock</span>
+                            <span class="font-headline-md text-xs font-bold text-black block mb-0.5">Confidentialité Médicale</span>
+                            <span class="font-body-md text-[11px] text-neutral-500 leading-snug">Salles de soin individuelles &amp; accueil médical</span>
+                        </div>
+                        <div class="p-4 bg-neutral-50 border border-neutral-200 hover:border-[#C5A059] transition-colors">
+                            <span class="material-symbols-outlined text-[#DFBA73] text-2xl mb-1.5 block">clinical_notes</span>
+                            <span class="font-headline-md text-xs font-bold text-black block mb-0.5">Supervision Médicale</span>
+                            <span class="font-body-md text-[11px] text-neutral-500 leading-snug">Bilan cutané préalable &amp; suivi post-acte</span>
+                        </div>
+                    </div>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-wrap items-center gap-4 pt-3">
+                        <button onclick="openReservationModal()" 
+                                class="px-7 py-3.5 bg-black text-white font-label-caps text-xs tracking-widest uppercase hover:bg-[#C5A059] hover:text-black transition-all duration-300 shadow-md font-bold flex items-center gap-2">
+                            <span>Demander une Consultation</span>
+                            <span class="material-symbols-outlined text-sm text-[#DFBA73]">calendar_month</span>
+                        </button>
+                        <a href="soins.html" 
+                           class="px-7 py-3.5 bg-white text-black border border-neutral-300 font-label-caps text-xs tracking-widest uppercase hover:border-black hover:bg-neutral-50 transition-colors font-semibold flex items-center gap-2">
+                            <span>Découvrir nos Soins</span>
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Real Cabinet Image & Services Summary Card -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="relative overflow-hidden shadow-2xl border border-neutral-200 bg-neutral-100">
+                        <img src="images/c2.png" 
+                             alt="Cabinet DERMATOLASER Sousse - Clinique Les Oliviers" 
+                             class="w-full aspect-[4/3] object-cover hover:scale-[1.02] transition-transform duration-700" />
+                        <div class="absolute bottom-4 left-4 right-4 bg-black/90 backdrop-blur-md p-3.5 border border-[#C5A059]/40 text-white font-label-caps text-xs uppercase tracking-wider shadow-lg">
+                            <span class="text-[#DFBA73] font-bold block mb-0.5">Plateau Médical &amp; Suites de Consultation</span>
+                            <span class="text-neutral-300 text-[10px]">Clinique Les Oliviers &bull; Centre Laser Sousse</span>
+                        </div>
+                    </div>
+
+                    <!-- Nos 4 Pôles de Services Cliniques Card -->
+                    <div class="p-6 bg-[#FAF6ED] border border-[#C5A059]/40 shadow-sm space-y-3.5">
+                        <span class="font-label-caps text-[10px] text-[#9E7D3B] uppercase tracking-widest font-bold block">Nos 4 Pôles d'Excellence</span>
+                        <div class="space-y-2.5 text-xs text-neutral-800">
+                            <div class="flex items-start gap-2.5">
+                                <span class="material-symbols-outlined text-sm text-[#C5A059] mt-0.5">check_circle</span>
+                                <div><strong class="font-bold text-black">Laser Visage &amp; Resurfaçage :</strong> Rides profondes, relissage ablatif, cicatrices d'acné et papillomes.</div>
+                            </div>
+                            <div class="flex items-start gap-2.5">
+                                <span class="material-symbols-outlined text-sm text-[#C5A059] mt-0.5">check_circle</span>
+                                <div><strong class="font-bold text-black">Épilation Laser Médicale :</strong> Alexandrite / Nd:YAG Cynosure et Diode médicale pour tous phototypes.</div>
+                            </div>
+                            <div class="flex items-start gap-2.5">
+                                <span class="material-symbols-outlined text-sm text-[#C5A059] mt-0.5">check_circle</span>
+                                <div><strong class="font-bold text-black">Vasculaire &amp; Dépigmentation :</strong> Couperose, varicosités, lentigos, mélasma et détatouage laser.</div>
+                            </div>
+                            <div class="flex items-start gap-2.5">
+                                <span class="material-symbols-outlined text-sm text-[#C5A059] mt-0.5">check_circle</span>
+                                <div><strong class="font-bold text-black">Technologies Avancées :</strong> RF Microneedling Sylfirm X et rajeunissement intime par laser gynécologique.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 2. SECTION: LES TECHNOLOGIES DU CENTRE -->
+        <section class="py-16 md:py-24 bg-neutral-50 border-t border-neutral-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+                
+                <!-- Section Header -->
+                <div class="text-center max-w-3xl mx-auto mb-14">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white text-[#9E7D3B] border border-[#C5A059]/40 font-label-caps text-xs uppercase tracking-widest mb-3 font-bold shadow-sm">
+                        <span class="w-1.5 h-1.5 rounded-full bg-[#9E7D3B] animate-pulse"></span> Plateau Technique Certifié CE & FDA
+                    </div>
+                    <h2 class="font-headline-lg text-3xl sm:text-4xl text-black font-bold mb-3 tracking-tight">
+                        Nos Technologies de Pointe
+                    </h2>
+                    <p class="font-body-md text-sm text-neutral-600 leading-relaxed max-w-2xl mx-auto">
+                        Le centre s'équipe exclusivement de dispositifs médicaux de classe IV de dernière génération pour garantir une précision absolue et des résultats durables.
+                    </p>
+                </div>
+
+                <!-- 4 Technologies Cards Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                    
+                    <!-- Tech 1: Laser CO2 Fractionné -->
+                    <div class="bg-white border border-neutral-200 hover:border-[#C5A059] p-6 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+                        <div>
+                            <div class="w-12 h-12 bg-neutral-100 border border-neutral-200 flex items-center justify-center mb-4 text-[#9E7D3B] group-hover:bg-black group-hover:text-[#DFBA73] transition-colors">
+                                <span class="material-symbols-outlined text-2xl">bolt</span>
+                            </div>
+                            <span class="font-label-caps text-[10px] text-[#9E7D3B] uppercase tracking-wider font-bold block mb-1">Laser Resurfacing</span>
+                            <h3 class="font-headline-md text-lg font-bold text-black mb-2">Laser CO2 Fractionné</h3>
+                            <p class="font-body-md text-xs text-neutral-600 leading-relaxed mb-4">
+                                Relissage profond des rides péri-buccales, estompement des cicatrices d'acné et vaporisation des lésions bénignes.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-neutral-100 flex items-center justify-between text-[11px] text-neutral-500">
+                            <span>10 600 nm</span>
+                            <span class="text-[#9E7D3B] font-bold">Visage</span>
+                        </div>
+                    </div>
+
+                    <!-- Tech 2: Morpheus 8 RF -->
+                    <div class="bg-white border border-neutral-200 hover:border-[#C5A059] p-6 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+                        <div>
+                            <div class="w-12 h-12 bg-neutral-100 border border-neutral-200 flex items-center justify-center mb-4 text-[#9E7D3B] group-hover:bg-black group-hover:text-[#DFBA73] transition-colors">
+                                <span class="material-symbols-outlined text-2xl">waves</span>
+                            </div>
+                            <span class="font-label-caps text-[10px] text-[#9E7D3B] uppercase tracking-wider font-bold block mb-1">Radiofréquence Fractionnée</span>
+                            <h3 class="font-headline-md text-lg font-bold text-black mb-2">Morpheus 8 RF</h3>
+                            <p class="font-body-md text-xs text-neutral-600 leading-relaxed mb-4">
+                                Micro-aiguilles d'or combinées à la radiofréquence pour retendre la peau relâchée, remodeler le derme et traiter le relâchement.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-neutral-100 flex items-center justify-between text-[11px] text-neutral-500">
+                            <span>Micro-aiguilles or</span>
+                            <span class="text-[#9E7D3B] font-bold">Visage & Corps</span>
+                        </div>
+                    </div>
+
+                    <!-- Tech 3: CFU Elife (HIFU) -->
+                    <div class="bg-white border border-neutral-200 hover:border-[#C5A059] p-6 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+                        <div>
+                            <div class="w-12 h-12 bg-neutral-100 border border-neutral-200 flex items-center justify-center mb-4 text-[#9E7D3B] group-hover:bg-black group-hover:text-[#DFBA73] transition-colors">
+                                <span class="material-symbols-outlined text-2xl">graphic_eq</span>
+                            </div>
+                            <span class="font-label-caps text-[10px] text-[#9E7D3B] uppercase tracking-wider font-bold block mb-1">Ultrasons Focalisés (HIFU)</span>
+                            <h3 class="font-headline-md text-lg font-bold text-black mb-2">CFU Elife ⊕ / ⊖</h3>
+                            <p class="font-body-md text-xs text-neutral-600 leading-relaxed mb-4">
+                                Lifting non chirurgical par ultrasons focalisés agissant sur le système musculo-aponévrotique (SMAS) et fonte graisseuse corporelle.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-neutral-100 flex items-center justify-between text-[11px] text-neutral-500">
+                            <span>Lifting SMAS</span>
+                            <span class="text-[#9E7D3B] font-bold">Sans chirurgie</span>
+                        </div>
+                    </div>
+
+                    <!-- Tech 4: Alexandrite & Nd:YAG Cynosure -->
+                    <div class="bg-white border border-neutral-200 hover:border-[#C5A059] p-6 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+                        <div>
+                            <div class="w-12 h-12 bg-neutral-100 border border-neutral-200 flex items-center justify-center mb-4 text-[#9E7D3B] group-hover:bg-black group-hover:text-[#DFBA73] transition-colors">
+                                <span class="material-symbols-outlined text-2xl">flash_on</span>
+                            </div>
+                            <span class="font-label-caps text-[10px] text-[#9E7D3B] uppercase tracking-wider font-bold block mb-1">Épilation Médicale</span>
+                            <h3 class="font-headline-md text-lg font-bold text-black mb-2">Alexandrite & Nd:YAG</h3>
+                            <p class="font-body-md text-xs text-neutral-600 leading-relaxed mb-4">
+                                Double longueur d'onde Cynosure Elite+ pour une épilation définitive sécurisée sur tous phototypes (I à VI) avec cryo continu à -5°C.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-neutral-100 flex items-center justify-between text-[11px] text-neutral-500">
+                            <span>Phototypes I à VI</span>
+                            <span class="text-[#9E7D3B] font-bold">Cryo -5°C</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Bottom Action Banner -->
+                <div class="p-6 sm:p-8 bg-black text-white flex flex-col sm:flex-row items-center justify-between gap-6 border border-neutral-800 shadow-xl">
+                    <div class="text-center sm:text-left">
+                        <span class="font-label-caps text-xs text-[#DFBA73] uppercase tracking-widest font-bold block mb-1">Consultation Personnalisée</span>
+                        <h4 class="font-headline-md text-xl font-bold text-white">Découvrez la Technologie Adaptée à Votre Peau</h4>
+                        <p class="font-body-md text-xs text-neutral-300 mt-1">Bilan dermatologique préalable complet pour définir votre protocole sur-mesure.</p>
+                    </div>
+                    <button onclick="openReservationModal()" class="px-7 py-3.5 bg-gradient-to-r from-[#DFBA73] to-[#C5A059] text-black font-label-caps text-xs uppercase tracking-widest font-bold hover:brightness-110 transition-all shadow-lg flex-shrink-0 flex items-center gap-2">
+                        <span>Prendre Rendez-Vous</span>
+                        <span class="material-symbols-outlined text-sm">calendar_month</span>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Global VIP Booking Callout Banner (c4.png Background) -->
+        <section class="relative py-28 text-white text-center overflow-hidden bg-neutral-950 border-t border-neutral-800">
+            <!-- Luxury Background Image Layer (c4.png) -->
+            <div class="absolute inset-0 z-0">
+                <div class="bg-cover bg-center w-full h-full object-cover scale-105 transition-transform duration-1000 ease-out" 
+                     style="background-image: url('images/c4.png');">
+                </div>
+                <!-- Elegant Semi-Transparent Gradient Overlay for maximum legibility & aesthetics -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/55 to-black/75 backdrop-brightness-90"></div>
+                <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-transparent to-black/70"></div>
+            </div>
+
+            <div class="max-w-4xl mx-auto px-margin-mobile relative z-10">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-black/60 backdrop-blur-md border border-[#C5A059]/50 text-[#DFBA73] font-label-caps text-xs uppercase tracking-widest mb-6 shadow-lg font-bold">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#DFBA73] animate-pulse"></span> Sousse Sanctuary &bull; Conciergerie Privée
+                </div>
+                <h2 class="font-display-xl-mobile md:font-display-xl text-3xl md:text-5xl font-bold text-white mb-6 drop-shadow-lg leading-tight">
+                    Commencez Votre Transformation Cutanée
+                </h2>
+                <p class="font-body-lg text-sm md:text-base text-neutral-200 max-w-xl mx-auto mb-8 leading-relaxed drop-shadow-md">
+                    Prenez rendez-vous pour une première consultation et un bilan cutané complet dans un cadre médical raffiné et confidentiel.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <button onclick="openReservationModal()" class="px-10 py-4 bg-gradient-to-r from-[#DFBA73] to-[#C5A059] text-black font-label-caps text-xs tracking-widest uppercase hover:brightness-110 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 shadow-xl font-bold">
+                        Prendre Rendez-Vous en Ligne
+                    </button>
+                    <a href="https://wa.me/21620123456" target="_blank" class="px-8 py-4 bg-black/70 backdrop-blur-md border border-[#C5A059]/60 text-white font-label-caps text-xs tracking-widest uppercase hover:bg-[#C5A059] hover:text-black transition-all duration-300 flex items-center gap-2 font-semibold shadow-lg">
+                        <span class="material-symbols-outlined text-base text-[#DFBA73]">chat</span>
+                        <span>Secrétariat WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Formulaire de Réservation -->
+        <!-- Floating VIP Concierge Action Buttons (WhatsApp & Réservation) -->
+    <div class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40 flex flex-col items-end gap-2.5 sm:gap-3.5 floating-concierge-container">
+        <!-- WhatsApp Direct -->
+        <a href="https://wa.me/21621040266" target="_blank" rel="noopener noreferrer"
+           class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-black flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300 border border-[#C5A059] hover:border-[#DFBA73] group relative"
+           aria-label="WhatsApp Direct" title="WhatsApp Direct">
+            <svg class="w-6 h-6 sm:w-7 sm:h-7 fill-[#25D366]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            <span class="absolute right-16 px-3 py-1.5 bg-black text-white text-[11px] font-label-caps uppercase tracking-wider whitespace-nowrap shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-[#C5A059]/60 hidden sm:block">
+                WhatsApp Direct
+            </span>
+        </a>
+
+        <!-- Réserver en Ligne -->
+        <button onclick="openReservationModal()" type="button"
+                class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-black flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300 border border-[#C5A059] hover:border-[#DFBA73] group relative cursor-pointer"
+                aria-label="Réserver en Ligne" title="Réserver en Ligne">
+            <span class="material-symbols-outlined text-2xl sm:text-[26px] text-[#DFBA73]">calendar_month</span>
+            <span class="absolute right-16 px-3 py-1.5 bg-black text-white text-[11px] font-label-caps uppercase tracking-wider whitespace-nowrap shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none border border-[#C5A059]/60 hidden sm:block">
+                Réserver en Ligne
+            </span>
+        </button>
+    </div>
+
+    <div id="reservationModal" class="fixed inset-0 z-50 hidden bg-black/75 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white max-w-lg w-full p-6 sm:p-8 relative max-h-[90vh] overflow-y-auto border border-neutral-300 shadow-2xl">
+            <button onclick="closeReservationModal()" class="absolute top-4 right-4 text-neutral-400 hover:text-black transition-colors">
+                <span class="material-symbols-outlined text-2xl">close</span>
+            </button>
+            <div class="mb-6">
+                <span class="font-label-caps text-xs text-[#9E7D3B] uppercase tracking-widest block mb-1 font-bold">Consultation Privée</span>
+                <h3 class="font-headline-md text-2xl font-bold text-black">Demande de Rendez-Vous</h3>
+                <p class="font-body-md text-xs text-neutral-600 mt-1">DERMATOLASER Medical Center Sousse &bull; Clinique Les Oliviers, Sousse</p>
+            </div>
+            
+            <form id="publicBookingForm" class="space-y-4">
+                <div>
+                    <label class="block font-label-caps text-xs text-black mb-1 uppercase font-bold">Nom & Prénom *</label>
+                    <input type="text" name="FullName" required placeholder="Votre nom complet" class="w-full bg-white border border-neutral-300 px-4 py-2.5 text-sm text-black focus:outline-none focus:border-black shadow-sm" />
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block font-label-caps text-xs text-black mb-1 uppercase font-bold">Téléphone / WhatsApp *</label>
+                        <input type="tel" name="PhoneNumber" required placeholder="+216 20 000 000" class="w-full bg-white border border-neutral-300 px-4 py-2.5 text-sm text-black focus:outline-none focus:border-black shadow-sm" />
+                    </div>
+                    <div>
+                        <label class="block font-label-caps text-xs text-black mb-1 uppercase font-bold">Email</label>
+                        <input type="email" name="Email" placeholder="votre@email.com" class="w-full bg-white border border-neutral-300 px-4 py-2.5 text-sm text-black focus:outline-none focus:border-black shadow-sm" />
+                    </div>
+                </div>
+                <div>
+                    <label class="block font-label-caps text-xs text-black mb-1 uppercase font-bold">Soin / Protocole Souhaité *</label>
+                    <input type="text" id="modalTreatmentInput" name="TreatmentName" required placeholder="Ex: Botox, Morpheus 8, Épilation..." class="w-full bg-white border border-neutral-300 px-4 py-2.5 text-sm text-black focus:outline-none focus:border-black shadow-sm font-semibold" />
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block font-label-caps text-xs text-black mb-1 uppercase font-bold">Date Préférée</label>
+                        <input type="date" name="PreferredDate" class="w-full bg-white border border-neutral-300 px-4 py-2.5 text-sm text-black focus:outline-none focus:border-black shadow-sm" />
+                    </div>
+                    <div>
+                        <label class="block font-label-caps text-xs text-black mb-1 uppercase font-bold">Créneau Horaire</label>
+                        <select name="PreferredTimeSlot" class="w-full bg-white border border-neutral-300 px-4 py-2.5 text-sm text-black focus:outline-none focus:border-black shadow-sm">
+                            <option value="Matinée (09:00 - 13:00)">Matinée (09:00 - 13:00)</option>
+                            <option value="Après-midi (13:00 - 16:00)">Après-midi (13:00 - 16:00)</option>
+                            <option value="Fin de Journée (16:00 - 19:00)">Fin de Journée (16:00 - 19:00)</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label class="block font-label-caps text-xs text-black mb-1 uppercase font-bold">Remarques ou Précisions (Optionnel)</label>
+                    <textarea name="Notes" rows="2" placeholder="Précisez vos besoins ou questions..." class="w-full bg-white border border-neutral-300 px-4 py-2 text-sm text-black focus:outline-none focus:border-black shadow-sm"></textarea>
+                </div>
+                <button type="submit" id="submitReserveBtn" class="w-full py-4 bg-black text-white font-label-caps text-xs tracking-widest uppercase hover:bg-neutral-800 transition-colors duration-300 mt-4 shadow-md font-bold">
+                    Confirmer ma Demande de Rendez-Vous
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="toastContainer" class="fixed bottom-6 left-6 z-50 flex flex-col gap-2 max-w-md"></div>
+
+    <!-- Complete Luxury Minimalist Footer -->
+    <footer class="bg-black text-white w-full pt-16 pb-12 border-t border-neutral-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-neutral-800">
+                <div class="lg:col-span-2">
+                    <span class="font-headline-lg text-2xl sm:text-3xl text-white tracking-tight block mb-2 font-bold">CENTRE LASER <span class="text-[#DFBA73]">LES OLIVIERS</span></span>
+                    <span class="font-label-caps text-[10px] text-[#C5A059] uppercase tracking-widest block mb-4 font-semibold">Centre Médical de Laser Dermatologique</span>
+                    <p class="font-body-md text-xs text-neutral-400 leading-relaxed mb-6 max-w-sm">
+                        Établissement d'excellence dédié à la dermatologie laser et à l'esthétique médicale de haute précision. Protocoles personnalisés sous supervision médicale certifiée à Sousse.
+                    </p>
+                    <div class="flex items-center gap-2 text-neutral-300 text-xs font-label-caps">
+                        <span class="material-symbols-outlined text-sm text-[#DFBA73]">verified</span>
+                        <span>Plateau Médical Certifié <span class="text-[#DFBA73] font-semibold">CE & FDA</span></span>
+                    </div>
+                </div>
+
+                <div>
+                    <span class="font-label-caps text-xs text-white uppercase tracking-widest block mb-4 font-bold">Soins Visage &amp; Vasculaire</span>
+                    <ul class="space-y-2.5 text-xs font-body-md text-neutral-400">
+                        <li><a href="tous-les-soins.html" class="hover:text-white transition-colors">Laser CO2 Resurfacing</a></li>
+                        <li><a href="tous-les-soins.html" class="hover:text-white transition-colors">Laser CO2 Cicatrices &amp; Acné</a></li>
+                        <li><a href="tous-les-soins.html" class="hover:text-white transition-colors">Laser CO2 Papillomes &amp; Verrues</a></li>
+                        <li><a href="tous-les-soins.html" class="hover:text-white transition-colors">Lésions Vasculaires &amp; Rosacées</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <span class="font-label-caps text-xs text-white uppercase tracking-widest block mb-4 font-bold">Corps &amp; Technologies</span>
+                    <ul class="space-y-2.5 text-xs font-body-md text-neutral-400">
+                        <li><a href="tous-les-soins.html" class="hover:text-white transition-colors">Épilation Alexandrite &amp; Nd:YAG</a></li>
+                        <li><a href="tous-les-soins.html" class="hover:text-white transition-colors">Laser Diode &amp; Laser Vaginal</a></li>
+                        <li><a href="tous-les-soins.html" class="hover:text-white transition-colors">RF Microneedling Sylfirm X</a></li>
+                        <li><a href="tous-les-soins.html" class="hover:text-white transition-colors">Détatouage &amp; Pigmentation</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <span class="font-label-caps text-xs text-white uppercase tracking-widest block mb-4 font-bold">Accès & Contact</span>
+                    <div class="space-y-3 text-xs font-body-md text-neutral-400">
+                        <p>Clinique Les Oliviers, Sousse / Les Oliviers<br />4000 Sousse, Tunisie</p>
+                        <p class="text-white font-medium">Tél: +216 73 000 111</p>
+                        <p>Lun - Sam : 09:00 - 19:00</p>
+                        <button onclick="openReservationModal()" class="mt-2 text-white border-b border-white pb-0.5 font-label-caps uppercase text-[10px] tracking-wider hover:text-neutral-300 transition-colors">
+                            Prendre RDV en Ligne &rarr;
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-[11px] font-label-caps text-neutral-500 uppercase tracking-wider">
+                <p>&copy; 2026 CENTRE LASER LES OLIVIERS. TOUS DROITS RÉSERVÉS.</p>
+                <div class="flex items-center gap-6">
+                    <a href="le-centre.html?v=2" class="hover:text-white transition-colors">Démarche Clinique</a>
+                    <a href="contact.html" class="hover:text-white transition-colors">Plan d'Accès</a>
+                    <a href="tous-les-soins.html" class="hover:text-white transition-colors">Catalogue Complet</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/site.js"></script>
+</body>
+</html>
