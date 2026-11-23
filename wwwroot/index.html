@@ -151,15 +151,20 @@
     <div class="flex-grow">
         
         <!-- Section 1: Hero Section with Embedded Bottom Accreditation Ribbon -->
-        <section class="relative min-h-[520px] sm:min-h-[calc(100vh-80px)] w-full flex flex-col justify-between overflow-hidden bg-black">
+        <section class="relative min-h-[calc(100vh-80px)] w-full flex flex-col justify-between overflow-hidden bg-black">
             <!-- Crystal Clear Background Layer - Full Image Details Visible -->
             <div class="absolute inset-0 z-0 overflow-hidden bg-black">
-                <div class="absolute inset-0 bg-cover bg-center w-full h-full scale-100"
+                <!-- Mobile hero: centered medical laser treatment (doctor + patient + laser handpiece) -->
+                <div class="md:hidden absolute inset-0 bg-cover bg-center w-full h-full"
+                     style="background-image: url('images/hero_laser_1.png')">
+                </div>
+                <!-- Desktop hero: full panoramic clinic collage -->
+                <div class="hidden md:block absolute inset-0 bg-cover bg-center w-full h-full"
                      style="background-image: url('images/hhome.png')">
                 </div>
-                <!-- Light subtle transparent overlay for maximum clarity -->
-                <div class="absolute inset-0 bg-black/20 z-20"></div>
-                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/30 z-20"></div>
+                <!-- Subtle overlay for legibility while keeping medical scene sharp -->
+                <div class="absolute inset-0 bg-black/35 md:bg-black/20 z-20"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 md:via-transparent to-black/30 z-20"></div>
             </div>
 
             <!-- Hero Content Floating With Full Width Balance -->
