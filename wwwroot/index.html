@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+        <link rel="icon" type="image/svg+xml" href="images/favicon.svg?v=2" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=2" />
 <title>DERMATOLASER | Centre Médical Laser & Esthétique Sousse</title>
     <meta name="description" content="Centre Médical de Laser Dermatologique et d'Esthétique Avancée à Sousse. Épilation laser définitive, mélasma, détatouage, rajeunissement et soins cutanés haute précision." />
     
@@ -449,6 +450,37 @@
                     lxItems.forEach(item => {
                         item.addEventListener('mouseenter', () => setActiveItem(item));
                     });
+
+                    // On mobile/tablet, activate whichever card is closest to viewport center on scroll
+                    let lxScrollTicking = false;
+                    const updateActiveOnScroll = () => {
+                        if (window.innerWidth > 1024) return;
+                        const viewportCenter = window.innerHeight * 0.5;
+                        let closestItem = null;
+                        let closestDist = Infinity;
+                        lxItems.forEach(item => {
+                            const rect = item.getBoundingClientRect();
+                            if (rect.bottom > 0 && rect.top < window.innerHeight) {
+                                const itemCenter = rect.top + rect.height / 2;
+                                const dist = Math.abs(itemCenter - viewportCenter);
+                                if (dist < closestDist) {
+                                    closestDist = dist;
+                                    closestItem = item;
+                                }
+                            }
+                        });
+                        if (closestItem) setActiveItem(closestItem);
+                    };
+
+                    window.addEventListener('scroll', () => {
+                        if (!lxScrollTicking) {
+                            window.requestAnimationFrame(() => {
+                                updateActiveOnScroll();
+                                lxScrollTicking = false;
+                            });
+                            lxScrollTicking = true;
+                        }
+                    }, { passive: true });
 
                     // Initialize first item
                     setActiveItem(lxItems[0], true);

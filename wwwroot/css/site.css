@@ -725,6 +725,15 @@ img {
     padding-top: 3.25rem !important;
     padding-bottom: 3.25rem !important;
   }
+  .lx-intro-title-wrap {
+    padding: 0 0.5rem;
+    max-width: 100%;
+  }
+  .lx-intro__title {
+    font-size: clamp(1.55rem, 6.2vw, 2.1rem);
+    gap: 0.55rem;
+    flex-wrap: wrap;
+  }
   .lx-img-label {
     display: none;
   }
