@@ -1,4 +1,4 @@
-// DERMATOLASER Luxury Aesthetic Clinic - Interactive Core & Diagnostic Engine
+// Centre Laser Les Oliviers Luxury Aesthetic Clinic - Interactive Core & Diagnostic Engine
 
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Navigation Scroll Listener
@@ -71,14 +71,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const treatment = document.getElementById('contactTreatment')?.value || 'Consultation Laser';
         const message = document.getElementById('contactMessage')?.value.trim() || 'Demande de renseignements.';
 
-        // Format clean WhatsApp message for DERMATOLASER Concierge
-        const whatsappText = `✨ *Nouvelle Demande de Contact - DERMATOLASER*\n\n` +
+        // Format clean WhatsApp message for Centre Laser Les Oliviers Concierge
+        const whatsappText = `✨ *Nouvelle Demande de Contact - Centre Laser Les Oliviers*\n\n` +
             `👤 *Nom & Prénom :* ${fullName}\n` +
             `📞 *Téléphone :* ${phone}\n` +
             `✉️ *Email :* ${email}\n` +
             `🔬 *Soin Laser / Sujet :* ${treatment}\n` +
             `💬 *Message :* ${message}\n\n` +
-            `_Envoyé depuis le formulaire contact DERMATOLASER_`;
+            `_Envoyé depuis le formulaire contact Centre Laser Les Oliviers_`;
 
         const encodedText = encodeURIComponent(whatsappText);
         const isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
